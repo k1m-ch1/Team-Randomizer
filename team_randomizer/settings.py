@@ -31,6 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'team_randomizer',
+    'abyss_randomizer',
+    'custom_randomizer', 
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
