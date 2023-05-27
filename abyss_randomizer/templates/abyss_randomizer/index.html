@@ -1,5 +1,15 @@
+
 {% extends 'team_randomizer/layout.html' %}
 
 {% block body %}
 <h1>Hello, Abyss randomizer!</h1>
+
+<section>
+  <h2>All characters: </h2>
+  <ol>
+    {% for character in characters %}
+      <li>{{ character }}</li>
+    {% endfor %}
+  </ol>
+</section>
 {% endblock %}
