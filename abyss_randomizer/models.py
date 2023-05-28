@@ -2,6 +2,11 @@ from django.db import models
 
 # Create your models here.
 
+class ModelType(models.Model):
+  name = models.CharField(null=False, blank=False, max_length=64)
+  
+  def __str__(self):
+    return f'{self.name}'
 
 class WeaponType(models.Model):
   name = models.CharField(null=False, blank=False, max_length=64)
@@ -12,6 +17,7 @@ class WeaponType(models.Model):
 class ElementType(models.Model):
   name = models.CharField(null=False, blank=False, max_length=64)
   icon_url = models.URLField(blank=True, null=True)
+  
   def __str__(self):
     return f"Element name: {self.name}"
   
@@ -26,9 +32,9 @@ class Region(models.Model):
   name = models.CharField(null=False, blank=False, max_length=64)
   icon_url = models.URLField(blank=True, null=True)
   element = models.ForeignKey(ElementType, on_delete=models.CASCADE)
-
-class CharacterModel(models.Model):
-  name = models.CharField(null=False, blank=False, max_length=64)
+  
+  def __str__(self):
+    return f'Region: {self.name}'
   
 class GenshinCharacter(models.Model):
   name = models.CharField(null=False, blank=False, max_length=64)
@@ -38,8 +44,9 @@ class GenshinCharacter(models.Model):
   region = models.ForeignKey(Region, on_delete=models.CASCADE, null=True, blank=True)
   weapon = models.ForeignKey(WeaponType, on_delete=models.CASCADE, null=False, blank=False)
   element = models.ManyToManyField(ElementType, related_name="characters")
-  model_type = models.CharField(null=True, blank=True, max_length=64)
+  model_type = models.ManyToManyField(ModelType, related_name="characters")
   
   def __str__(self):
-    return f"Genshin character name: {self.name}"
+    return f"Character: {self.name}"
+
 

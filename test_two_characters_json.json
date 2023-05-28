@@ -1,0 +1,1911 @@
+[
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/3/30/Albedo_Icon.png/revision/latest/scale-to-width-down/50?cb=20210213163457"
+    },
+    "Name": {
+      "text": "Albedo"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Geo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Element_Geo.svg/revision/latest/scale-to-width-down/22?cb=20220119211105"
+    },
+    "Weapon": {
+      "text": "Sword",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Weapon-class-sword-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225833"
+    },
+    "Region": {
+      "text": "Mondstadt",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Emblem_Mondstadt.png/revision/latest/scale-to-width-down/22?cb=20201116194623"
+    },
+    "Model Type": {
+      "text": "Medium Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Alhaitham_Icon.png/revision/latest/scale-to-width-down/50?cb=20230118023048"
+    },
+    "Name": {
+      "text": "Alhaitham"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Dendro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Dendro.svg/revision/latest/scale-to-width-down/22?cb=20220119211226"
+    },
+    "Weapon": {
+      "text": "Sword",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Weapon-class-sword-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225833"
+    },
+    "Region": {
+      "text": "Sumeru",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/3/38/Emblem_Sumeru.png/revision/latest/scale-to-width-down/22?cb=20220718183140"
+    },
+    "Model Type": {
+      "text": "Tall Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest/scale-to-width-down/50?cb=20220210041444"
+    },
+    "Name": {
+      "text": "Aloy"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Cryo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/72/Element_Cryo.svg/revision/latest/scale-to-width-down/22?cb=20220119211508"
+    },
+    "Weapon": {
+      "text": "Bow",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/97/Weapon-class-bow-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225907"
+    },
+    "Region": {
+      "text": "None"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/75/Amber_Icon.png/revision/latest/scale-to-width-down/50?cb=20210213161233"
+    },
+    "Name": {
+      "text": "Amber"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Pyro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Element_Pyro.svg/revision/latest/scale-to-width-down/22?cb=20220119211527"
+    },
+    "Weapon": {
+      "text": "Bow",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/97/Weapon-class-bow-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225907"
+    },
+    "Region": {
+      "text": "Mondstadt",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Emblem_Mondstadt.png/revision/latest/scale-to-width-down/22?cb=20201116194623"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/7b/Arataki_Itto_Icon.png/revision/latest/scale-to-width-down/50?cb=20211214102037"
+    },
+    "Name": {
+      "text": "Arataki Itto"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Geo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Element_Geo.svg/revision/latest/scale-to-width-down/22?cb=20220119211105"
+    },
+    "Weapon": {
+      "text": "Claymore",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Weapon-class-claymore-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225845"
+    },
+    "Region": {
+      "text": "Inazuma",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Emblem_Inazuma.png/revision/latest/scale-to-width-down/22?cb=20230127155005"
+    },
+    "Model Type": {
+      "text": "Tall Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/c/cb/Baizhu_Icon.png/revision/latest/scale-to-width-down/50?cb=20230510202024"
+    },
+    "Name": {
+      "text": "Baizhu"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Dendro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Dendro.svg/revision/latest/scale-to-width-down/22?cb=20220119211226"
+    },
+    "Weapon": {
+      "text": "Catalyst",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/Weapon-class-catalyst-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225852"
+    },
+    "Region": {
+      "text": "Liyue",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Emblem_Liyue.png/revision/latest/scale-to-width-down/22?cb=20201116194654"
+    },
+    "Model Type": {
+      "text": "Tall Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Barbara_Icon.png/revision/latest/scale-to-width-down/50?cb=20230302072845"
+    },
+    "Name": {
+      "text": "Barbara"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Hydro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Element_Hydro.svg/revision/latest/scale-to-width-down/22?cb=20220119211435"
+    },
+    "Weapon": {
+      "text": "Catalyst",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/Weapon-class-catalyst-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225852"
+    },
+    "Region": {
+      "text": "Mondstadt",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Emblem_Mondstadt.png/revision/latest/scale-to-width-down/22?cb=20201116194623"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/e/e1/Beidou_Icon.png/revision/latest/scale-to-width-down/50?cb=20210214011821"
+    },
+    "Name": {
+      "text": "Beidou"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Electro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Element_Electro.svg/revision/latest/scale-to-width-down/22?cb=20220119211156"
+    },
+    "Weapon": {
+      "text": "Claymore",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Weapon-class-claymore-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225845"
+    },
+    "Region": {
+      "text": "Liyue",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Emblem_Liyue.png/revision/latest/scale-to-width-down/22?cb=20201116194654"
+    },
+    "Model Type": {
+      "text": "Tall Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/79/Bennett_Icon.png/revision/latest/scale-to-width-down/50?cb=20210214011829"
+    },
+    "Name": {
+      "text": "Bennett"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Pyro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Element_Pyro.svg/revision/latest/scale-to-width-down/22?cb=20220119211527"
+    },
+    "Weapon": {
+      "text": "Sword",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Weapon-class-sword-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225833"
+    },
+    "Region": {
+      "text": "Mondstadt",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Emblem_Mondstadt.png/revision/latest/scale-to-width-down/22?cb=20201116194623"
+    },
+    "Model Type": {
+      "text": "Medium Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/d/dd/Candace_Icon.png/revision/latest/scale-to-width-down/50?cb=20220928023507"
+    },
+    "Name": {
+      "text": "Candace"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Hydro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Element_Hydro.svg/revision/latest/scale-to-width-down/22?cb=20220119211435"
+    },
+    "Weapon": {
+      "text": "Polearm",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Weapon-class-polearm-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225839"
+    },
+    "Region": {
+      "text": "Sumeru",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/3/38/Emblem_Sumeru.png/revision/latest/scale-to-width-down/22?cb=20220718183140"
+    },
+    "Model Type": {
+      "text": "Tall Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/Chongyun_Icon.png/revision/latest/scale-to-width-down/50?cb=20210213163430"
+    },
+    "Name": {
+      "text": "Chongyun"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Cryo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/72/Element_Cryo.svg/revision/latest/scale-to-width-down/22?cb=20220119211508"
+    },
+    "Weapon": {
+      "text": "Claymore",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Weapon-class-claymore-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225845"
+    },
+    "Region": {
+      "text": "Liyue",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Emblem_Liyue.png/revision/latest/scale-to-width-down/22?cb=20201116194654"
+    },
+    "Model Type": {
+      "text": "Medium Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/a/a2/Collei_Icon.png/revision/latest/scale-to-width-down/50?cb=20220824024802"
+    },
+    "Name": {
+      "text": "Collei"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Dendro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Dendro.svg/revision/latest/scale-to-width-down/22?cb=20220119211226"
+    },
+    "Weapon": {
+      "text": "Bow",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/97/Weapon-class-bow-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225907"
+    },
+    "Region": {
+      "text": "Sumeru",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/3/38/Emblem_Sumeru.png/revision/latest/scale-to-width-down/22?cb=20220718183140"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/3/31/Cyno_Icon.png/revision/latest/scale-to-width-down/50?cb=20220928023453"
+    },
+    "Name": {
+      "text": "Cyno"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Electro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Element_Electro.svg/revision/latest/scale-to-width-down/22?cb=20220119211156"
+    },
+    "Weapon": {
+      "text": "Polearm",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Weapon-class-polearm-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225839"
+    },
+    "Region": {
+      "text": "Sumeru",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/3/38/Emblem_Sumeru.png/revision/latest/scale-to-width-down/22?cb=20220718183140"
+    },
+    "Model Type": {
+      "text": "Medium Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/3/3f/Dehya_Icon.png/revision/latest/scale-to-width-down/50?cb=20230301024649"
+    },
+    "Name": {
+      "text": "Dehya"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Pyro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Element_Pyro.svg/revision/latest/scale-to-width-down/22?cb=20220119211527"
+    },
+    "Weapon": {
+      "text": "Claymore",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Weapon-class-claymore-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225845"
+    },
+    "Region": {
+      "text": "Sumeru",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/3/38/Emblem_Sumeru.png/revision/latest/scale-to-width-down/22?cb=20220718183140"
+    },
+    "Model Type": {
+      "text": "Tall Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/3/3d/Diluc_Icon.png/revision/latest/scale-to-width-down/50?cb=20210213163824"
+    },
+    "Name": {
+      "text": "Diluc"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Pyro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Element_Pyro.svg/revision/latest/scale-to-width-down/22?cb=20220119211527"
+    },
+    "Weapon": {
+      "text": "Claymore",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Weapon-class-claymore-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225845"
+    },
+    "Region": {
+      "text": "Mondstadt",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Emblem_Mondstadt.png/revision/latest/scale-to-width-down/22?cb=20201116194623"
+    },
+    "Model Type": {
+      "text": "Tall Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/4/40/Diona_Icon.png/revision/latest/scale-to-width-down/50?cb=20220210035554"
+    },
+    "Name": {
+      "text": "Diona"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Cryo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/72/Element_Cryo.svg/revision/latest/scale-to-width-down/22?cb=20220119211508"
+    },
+    "Weapon": {
+      "text": "Bow",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/97/Weapon-class-bow-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225907"
+    },
+    "Region": {
+      "text": "Mondstadt",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Emblem_Mondstadt.png/revision/latest/scale-to-width-down/22?cb=20201116194623"
+    },
+    "Model Type": {
+      "text": "Short Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/5/54/Dori_Icon.png/revision/latest/scale-to-width-down/50?cb=20220909121714"
+    },
+    "Name": {
+      "text": "Dori"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Electro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Element_Electro.svg/revision/latest/scale-to-width-down/22?cb=20220119211156"
+    },
+    "Weapon": {
+      "text": "Claymore",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Weapon-class-claymore-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225845"
+    },
+    "Region": {
+      "text": "Sumeru",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/3/38/Emblem_Sumeru.png/revision/latest/scale-to-width-down/22?cb=20220718183140"
+    },
+    "Model Type": {
+      "text": "Short Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/a/af/Eula_Icon.png/revision/latest/scale-to-width-down/50?cb=20210511040616"
+    },
+    "Name": {
+      "text": "Eula"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Cryo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/72/Element_Cryo.svg/revision/latest/scale-to-width-down/22?cb=20220119211508"
+    },
+    "Weapon": {
+      "text": "Claymore",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Weapon-class-claymore-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225845"
+    },
+    "Region": {
+      "text": "Mondstadt",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Emblem_Mondstadt.png/revision/latest/scale-to-width-down/22?cb=20201116194623"
+    },
+    "Model Type": {
+      "text": "Tall Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/b/b2/Faruzan_Icon.png/revision/latest/scale-to-width-down/50?cb=20221207034237"
+    },
+    "Name": {
+      "text": "Faruzan"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Anemo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/1/10/Element_Anemo.svg/revision/latest/scale-to-width-down/22?cb=20220119211128"
+    },
+    "Weapon": {
+      "text": "Bow",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/97/Weapon-class-bow-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225907"
+    },
+    "Region": {
+      "text": "Sumeru",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/3/38/Emblem_Sumeru.png/revision/latest/scale-to-width-down/22?cb=20220718183140"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9a/Fischl_Icon.png/revision/latest/scale-to-width-down/50?cb=20220627171007"
+    },
+    "Name": {
+      "text": "Fischl"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Electro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Element_Electro.svg/revision/latest/scale-to-width-down/22?cb=20220119211156"
+    },
+    "Weapon": {
+      "text": "Bow",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/97/Weapon-class-bow-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225907"
+    },
+    "Region": {
+      "text": "Mondstadt",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Emblem_Mondstadt.png/revision/latest/scale-to-width-down/22?cb=20201116194623"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/79/Ganyu_Icon.png/revision/latest/scale-to-width-down/50?cb=20230519012425"
+    },
+    "Name": {
+      "text": "Ganyu"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Cryo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/72/Element_Cryo.svg/revision/latest/scale-to-width-down/22?cb=20220119211508"
+    },
+    "Weapon": {
+      "text": "Bow",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/97/Weapon-class-bow-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225907"
+    },
+    "Region": {
+      "text": "Liyue",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Emblem_Liyue.png/revision/latest/scale-to-width-down/22?cb=20201116194654"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/fe/Gorou_Icon.png/revision/latest/scale-to-width-down/50?cb=20211126224331"
+    },
+    "Name": {
+      "text": "Gorou"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Geo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Element_Geo.svg/revision/latest/scale-to-width-down/22?cb=20220119211105"
+    },
+    "Weapon": {
+      "text": "Bow",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/97/Weapon-class-bow-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225907"
+    },
+    "Region": {
+      "text": "Inazuma",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Emblem_Inazuma.png/revision/latest/scale-to-width-down/22?cb=20230127155005"
+    },
+    "Model Type": {
+      "text": "Medium Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/e/e9/Hu_Tao_Icon.png/revision/latest/scale-to-width-down/50?cb=20210228210611"
+    },
+    "Name": {
+      "text": "Hu Tao"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Pyro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Element_Pyro.svg/revision/latest/scale-to-width-down/22?cb=20220119211527"
+    },
+    "Weapon": {
+      "text": "Polearm",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Weapon-class-polearm-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225839"
+    },
+    "Region": {
+      "text": "Liyue",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Emblem_Liyue.png/revision/latest/scale-to-width-down/22?cb=20201116194654"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/6/64/Jean_Icon.png/revision/latest/scale-to-width-down/50?cb=20220602180528"
+    },
+    "Name": {
+      "text": "Jean"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Anemo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/1/10/Element_Anemo.svg/revision/latest/scale-to-width-down/22?cb=20220119211128"
+    },
+    "Weapon": {
+      "text": "Sword",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Weapon-class-sword-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225833"
+    },
+    "Region": {
+      "text": "Mondstadt",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Emblem_Mondstadt.png/revision/latest/scale-to-width-down/22?cb=20201116194623"
+    },
+    "Model Type": {
+      "text": "Tall Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/e/e3/Kaedehara_Kazuha_Icon.png/revision/latest/scale-to-width-down/50?cb=20210623063513"
+    },
+    "Name": {
+      "text": "Kaedehara Kazuha"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Anemo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/1/10/Element_Anemo.svg/revision/latest/scale-to-width-down/22?cb=20220119211128"
+    },
+    "Weapon": {
+      "text": "Sword",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Weapon-class-sword-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225833"
+    },
+    "Region": {
+      "text": "Inazuma",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Emblem_Inazuma.png/revision/latest/scale-to-width-down/22?cb=20230127155005"
+    },
+    "Model Type": {
+      "text": "Medium Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/b/b6/Kaeya_Icon.png/revision/latest/scale-to-width-down/50?cb=20210214011902"
+    },
+    "Name": {
+      "text": "Kaeya"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Cryo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/72/Element_Cryo.svg/revision/latest/scale-to-width-down/22?cb=20220119211508"
+    },
+    "Weapon": {
+      "text": "Sword",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Weapon-class-sword-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225833"
+    },
+    "Region": {
+      "text": "Mondstadt",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Emblem_Mondstadt.png/revision/latest/scale-to-width-down/22?cb=20201116194623"
+    },
+    "Model Type": {
+      "text": "Tall Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Kamisato_Ayaka_Icon.png/revision/latest/scale-to-width-down/50?cb=20211221231648"
+    },
+    "Name": {
+      "text": "Kamisato Ayaka"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Cryo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/72/Element_Cryo.svg/revision/latest/scale-to-width-down/22?cb=20220119211508"
+    },
+    "Weapon": {
+      "text": "Sword",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Weapon-class-sword-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225833"
+    },
+    "Region": {
+      "text": "Inazuma",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Emblem_Inazuma.png/revision/latest/scale-to-width-down/22?cb=20230127155005"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Kamisato_Ayato_Icon.png/revision/latest/scale-to-width-down/50?cb=20220601033710"
+    },
+    "Name": {
+      "text": "Kamisato Ayato"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Hydro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Element_Hydro.svg/revision/latest/scale-to-width-down/22?cb=20220119211435"
+    },
+    "Weapon": {
+      "text": "Sword",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Weapon-class-sword-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225833"
+    },
+    "Region": {
+      "text": "Inazuma",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Emblem_Inazuma.png/revision/latest/scale-to-width-down/22?cb=20230127155005"
+    },
+    "Model Type": {
+      "text": "Tall Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/Kaveh_Icon.png/revision/latest/scale-to-width-down/50?cb=20230502113258"
+    },
+    "Name": {
+      "text": "Kaveh"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Dendro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Dendro.svg/revision/latest/scale-to-width-down/22?cb=20220119211226"
+    },
+    "Weapon": {
+      "text": "Claymore",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Weapon-class-claymore-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225845"
+    },
+    "Region": {
+      "text": "Sumeru",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/3/38/Emblem_Sumeru.png/revision/latest/scale-to-width-down/22?cb=20220718183140"
+    },
+    "Model Type": {
+      "text": "Tall Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/5/52/Keqing_Icon.png/revision/latest/scale-to-width-down/50?cb=20210213162751"
+    },
+    "Name": {
+      "text": "Keqing"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Electro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Element_Electro.svg/revision/latest/scale-to-width-down/22?cb=20220119211156"
+    },
+    "Weapon": {
+      "text": "Sword",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Weapon-class-sword-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225833"
+    },
+    "Region": {
+      "text": "Liyue",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Emblem_Liyue.png/revision/latest/scale-to-width-down/22?cb=20201116194654"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/b/b6/Kirara_Icon.png/revision/latest/scale-to-width-down/50?cb=20230524073946"
+    },
+    "Name": {
+      "text": "Kirara"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Dendro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Dendro.svg/revision/latest/scale-to-width-down/22?cb=20220119211226"
+    },
+    "Weapon": {
+      "text": "Sword",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Weapon-class-sword-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225833"
+    },
+    "Region": {
+      "text": "Inazuma",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Emblem_Inazuma.png/revision/latest/scale-to-width-down/22?cb=20230127155005"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9c/Klee_Icon.png/revision/latest/scale-to-width-down/50?cb=20210214011911"
+    },
+    "Name": {
+      "text": "Klee"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Pyro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Element_Pyro.svg/revision/latest/scale-to-width-down/22?cb=20220119211527"
+    },
+    "Weapon": {
+      "text": "Catalyst",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/Weapon-class-catalyst-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225852"
+    },
+    "Region": {
+      "text": "Mondstadt",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Emblem_Mondstadt.png/revision/latest/scale-to-width-down/22?cb=20201116194623"
+    },
+    "Model Type": {
+      "text": "Short Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/d/df/Kujou_Sara_Icon.png/revision/latest/scale-to-width-down/50?cb=20220210040844"
+    },
+    "Name": {
+      "text": "Kujou Sara"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Electro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Element_Electro.svg/revision/latest/scale-to-width-down/22?cb=20220119211156"
+    },
+    "Weapon": {
+      "text": "Bow",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/97/Weapon-class-bow-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225907"
+    },
+    "Region": {
+      "text": "Inazuma",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Emblem_Inazuma.png/revision/latest/scale-to-width-down/22?cb=20230127155005"
+    },
+    "Model Type": {
+      "text": "Tall Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/b/b3/Kuki_Shinobu_Icon.png/revision/latest/scale-to-width-down/50?cb=20220605061801"
+    },
+    "Name": {
+      "text": "Kuki Shinobu"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Electro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Element_Electro.svg/revision/latest/scale-to-width-down/22?cb=20220119211156"
+    },
+    "Weapon": {
+      "text": "Sword",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Weapon-class-sword-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225833"
+    },
+    "Region": {
+      "text": "Inazuma",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Emblem_Inazuma.png/revision/latest/scale-to-width-down/22?cb=20230127155005"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/1/1a/Layla_Icon.png/revision/latest/scale-to-width-down/50?cb=20221118140544"
+    },
+    "Name": {
+      "text": "Layla"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Cryo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/72/Element_Cryo.svg/revision/latest/scale-to-width-down/22?cb=20220119211508"
+    },
+    "Weapon": {
+      "text": "Sword",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Weapon-class-sword-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225833"
+    },
+    "Region": {
+      "text": "Sumeru",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/3/38/Emblem_Sumeru.png/revision/latest/scale-to-width-down/22?cb=20220718183140"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/6/65/Lisa_Icon.png/revision/latest/scale-to-width-down/50?cb=20210213163538"
+    },
+    "Name": {
+      "text": "Lisa"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Electro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Element_Electro.svg/revision/latest/scale-to-width-down/22?cb=20220119211156"
+    },
+    "Weapon": {
+      "text": "Catalyst",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/Weapon-class-catalyst-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225852"
+    },
+    "Region": {
+      "text": "Mondstadt",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Emblem_Mondstadt.png/revision/latest/scale-to-width-down/22?cb=20201116194623"
+    },
+    "Model Type": {
+      "text": "Tall Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/d/dd/Mika_Icon.png/revision/latest/scale-to-width-down/50?cb=20230321101835"
+    },
+    "Name": {
+      "text": "Mika"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Cryo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/72/Element_Cryo.svg/revision/latest/scale-to-width-down/22?cb=20220119211508"
+    },
+    "Weapon": {
+      "text": "Polearm",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Weapon-class-polearm-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225839"
+    },
+    "Region": {
+      "text": "Mondstadt",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Emblem_Mondstadt.png/revision/latest/scale-to-width-down/22?cb=20201116194623"
+    },
+    "Model Type": {
+      "text": "Medium Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/4/41/Mona_Icon.png/revision/latest/scale-to-width-down/50?cb=20220601033558"
+    },
+    "Name": {
+      "text": "Mona"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Hydro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Element_Hydro.svg/revision/latest/scale-to-width-down/22?cb=20220119211435"
+    },
+    "Weapon": {
+      "text": "Catalyst",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/Weapon-class-catalyst-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225852"
+    },
+    "Region": {
+      "text": "Mondstadt",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Emblem_Mondstadt.png/revision/latest/scale-to-width-down/22?cb=20201116194623"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/f9/Nahida_Icon.png/revision/latest/scale-to-width-down/50?cb=20221102030809"
+    },
+    "Name": {
+      "text": "Nahida"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Dendro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Dendro.svg/revision/latest/scale-to-width-down/22?cb=20220119211226"
+    },
+    "Weapon": {
+      "text": "Catalyst",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/Weapon-class-catalyst-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225852"
+    },
+    "Region": {
+      "text": "Sumeru",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/3/38/Emblem_Sumeru.png/revision/latest/scale-to-width-down/22?cb=20220718183140"
+    },
+    "Model Type": {
+      "text": "Short Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/5/58/Nilou_Icon.png/revision/latest/scale-to-width-down/50?cb=20221014102540"
+    },
+    "Name": {
+      "text": "Nilou"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Hydro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Element_Hydro.svg/revision/latest/scale-to-width-down/22?cb=20220119211435"
+    },
+    "Weapon": {
+      "text": "Sword",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Weapon-class-sword-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225833"
+    },
+    "Region": {
+      "text": "Sumeru",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/3/38/Emblem_Sumeru.png/revision/latest/scale-to-width-down/22?cb=20220718183140"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/e/e0/Ningguang_Icon.png/revision/latest/scale-to-width-down/50?cb=20220210040239"
+    },
+    "Name": {
+      "text": "Ningguang"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Geo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Element_Geo.svg/revision/latest/scale-to-width-down/22?cb=20220119211105"
+    },
+    "Weapon": {
+      "text": "Catalyst",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/Weapon-class-catalyst-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225852"
+    },
+    "Region": {
+      "text": "Liyue",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Emblem_Liyue.png/revision/latest/scale-to-width-down/22?cb=20201116194654"
+    },
+    "Model Type": {
+      "text": "Tall Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/8e/Noelle_Icon.png/revision/latest/scale-to-width-down/50?cb=20210214011929"
+    },
+    "Name": {
+      "text": "Noelle"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Geo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Element_Geo.svg/revision/latest/scale-to-width-down/22?cb=20220119211105"
+    },
+    "Weapon": {
+      "text": "Claymore",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Weapon-class-claymore-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225845"
+    },
+    "Region": {
+      "text": "Mondstadt",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Emblem_Mondstadt.png/revision/latest/scale-to-width-down/22?cb=20201116194623"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/b/b3/Qiqi_Icon.png/revision/latest/scale-to-width-down/50?cb=20220316020612"
+    },
+    "Name": {
+      "text": "Qiqi"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Cryo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/72/Element_Cryo.svg/revision/latest/scale-to-width-down/22?cb=20220119211508"
+    },
+    "Weapon": {
+      "text": "Sword",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Weapon-class-sword-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225833"
+    },
+    "Region": {
+      "text": "Liyue",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Emblem_Liyue.png/revision/latest/scale-to-width-down/22?cb=20201116194654"
+    },
+    "Model Type": {
+      "text": "Short Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/Raiden_Shogun_Icon.png/revision/latest/scale-to-width-down/50?cb=20220316020439"
+    },
+    "Name": {
+      "text": "Raiden Shogun"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Electro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Element_Electro.svg/revision/latest/scale-to-width-down/22?cb=20220119211156"
+    },
+    "Weapon": {
+      "text": "Polearm",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Weapon-class-polearm-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225839"
+    },
+    "Region": {
+      "text": "Inazuma",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Emblem_Inazuma.png/revision/latest/scale-to-width-down/22?cb=20230127155005"
+    },
+    "Model Type": {
+      "text": "Tall Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/b/b8/Razor_Icon.png/revision/latest/scale-to-width-down/50?cb=20210214011936"
+    },
+    "Name": {
+      "text": "Razor"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Electro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Element_Electro.svg/revision/latest/scale-to-width-down/22?cb=20220119211156"
+    },
+    "Weapon": {
+      "text": "Claymore",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Weapon-class-claymore-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225845"
+    },
+    "Region": {
+      "text": "Mondstadt",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Emblem_Mondstadt.png/revision/latest/scale-to-width-down/22?cb=20201116194623"
+    },
+    "Model Type": {
+      "text": "Medium Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/Rosaria_Icon.png/revision/latest/scale-to-width-down/50?cb=20220601032845"
+    },
+    "Name": {
+      "text": "Rosaria"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Cryo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/72/Element_Cryo.svg/revision/latest/scale-to-width-down/22?cb=20220119211508"
+    },
+    "Weapon": {
+      "text": "Polearm",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Weapon-class-polearm-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225839"
+    },
+    "Region": {
+      "text": "Mondstadt",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Emblem_Mondstadt.png/revision/latest/scale-to-width-down/22?cb=20201116194623"
+    },
+    "Model Type": {
+      "text": "Tall Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Sangonomiya_Kokomi_Icon.png/revision/latest/scale-to-width-down/50?cb=20210921103819"
+    },
+    "Name": {
+      "text": "Sangonomiya Kokomi"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Hydro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Element_Hydro.svg/revision/latest/scale-to-width-down/22?cb=20220119211435"
+    },
+    "Weapon": {
+      "text": "Catalyst",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/Weapon-class-catalyst-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225852"
+    },
+    "Region": {
+      "text": "Inazuma",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Emblem_Inazuma.png/revision/latest/scale-to-width-down/22?cb=20230127155005"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/22/Sayu_Icon.png/revision/latest/scale-to-width-down/50?cb=20210810101044"
+    },
+    "Name": {
+      "text": "Sayu"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Anemo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/1/10/Element_Anemo.svg/revision/latest/scale-to-width-down/22?cb=20220119211128"
+    },
+    "Weapon": {
+      "text": "Claymore",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Weapon-class-claymore-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225845"
+    },
+    "Region": {
+      "text": "Inazuma",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Emblem_Inazuma.png/revision/latest/scale-to-width-down/22?cb=20230127155005"
+    },
+    "Model Type": {
+      "text": "Short Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/a/af/Shenhe_Icon.png/revision/latest/scale-to-width-down/50?cb=20220210034241"
+    },
+    "Name": {
+      "text": "Shenhe"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Cryo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/72/Element_Cryo.svg/revision/latest/scale-to-width-down/22?cb=20220119211508"
+    },
+    "Weapon": {
+      "text": "Polearm",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Weapon-class-polearm-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225839"
+    },
+    "Region": {
+      "text": "Liyue",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Emblem_Liyue.png/revision/latest/scale-to-width-down/22?cb=20201116194654"
+    },
+    "Model Type": {
+      "text": "Tall Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/20/Shikanoin_Heizou_Icon.png/revision/latest/scale-to-width-down/50?cb=20220719163112"
+    },
+    "Name": {
+      "text": "Shikanoin Heizou"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Anemo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/1/10/Element_Anemo.svg/revision/latest/scale-to-width-down/22?cb=20220119211128"
+    },
+    "Weapon": {
+      "text": "Catalyst",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/Weapon-class-catalyst-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225852"
+    },
+    "Region": {
+      "text": "Inazuma",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Emblem_Inazuma.png/revision/latest/scale-to-width-down/22?cb=20230127155005"
+    },
+    "Model Type": {
+      "text": "Medium Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Sucrose_Icon.png/revision/latest/scale-to-width-down/50?cb=20210213163209"
+    },
+    "Name": {
+      "text": "Sucrose"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Anemo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/1/10/Element_Anemo.svg/revision/latest/scale-to-width-down/22?cb=20220119211128"
+    },
+    "Weapon": {
+      "text": "Catalyst",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/Weapon-class-catalyst-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225852"
+    },
+    "Region": {
+      "text": "Mondstadt",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Emblem_Mondstadt.png/revision/latest/scale-to-width-down/22?cb=20201116194623"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/85/Tartaglia_Icon.png/revision/latest/scale-to-width-down/50?cb=20210213163935"
+    },
+    "Name": {
+      "text": "Tartaglia"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Hydro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Element_Hydro.svg/revision/latest/scale-to-width-down/22?cb=20220119211435"
+    },
+    "Weapon": {
+      "text": "Bow",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/97/Weapon-class-bow-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225907"
+    },
+    "Region": {
+      "text": "Snezhnaya",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/b/b0/Emblem_Nation_Unknown.png/revision/latest/scale-to-width-down/22?cb=20220619184541"
+    },
+    "Model Type": {
+      "text": "Tall Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/5/5b/Thoma_Icon.png/revision/latest/scale-to-width-down/50?cb=20211014011046"
+    },
+    "Name": {
+      "text": "Thoma"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Pyro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Element_Pyro.svg/revision/latest/scale-to-width-down/22?cb=20220119211527"
+    },
+    "Weapon": {
+      "text": "Polearm",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Weapon-class-polearm-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225839"
+    },
+    "Region": {
+      "text": "Inazuma",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Emblem_Inazuma.png/revision/latest/scale-to-width-down/22?cb=20230127155005"
+    },
+    "Model Type": {
+      "text": "Tall Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/87/Tighnari_Icon.png/revision/latest/scale-to-width-down/50?cb=20220824024817"
+    },
+    "Name": {
+      "text": "Tighnari"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Dendro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Dendro.svg/revision/latest/scale-to-width-down/22?cb=20220119211226"
+    },
+    "Weapon": {
+      "text": "Bow",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/97/Weapon-class-bow-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225907"
+    },
+    "Region": {
+      "text": "Sumeru",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/3/38/Emblem_Sumeru.png/revision/latest/scale-to-width-down/22?cb=20220718183140"
+    },
+    "Model Type": {
+      "text": "Medium Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest/scale-to-width-down/50?cb=20211220013610"
+    },
+    "Name": {
+      "text": "Traveler"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": [
+        "Anemo",
+        "Geo",
+        "Electro",
+        "Dendro"
+      ]
+    },
+    "Weapon": {
+      "text": "Sword",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Weapon-class-sword-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225833"
+    },
+    "Region": {
+      "text": "None"
+    },
+    "Model Type": {
+      "text": [
+        "Medium Male",
+        "Medium Female"
+      ]
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/f1/Venti_Icon.png/revision/latest/scale-to-width-down/50?cb=20210214011949"
+    },
+    "Name": {
+      "text": "Venti"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Anemo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/1/10/Element_Anemo.svg/revision/latest/scale-to-width-down/22?cb=20220119211128"
+    },
+    "Weapon": {
+      "text": "Bow",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/97/Weapon-class-bow-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225907"
+    },
+    "Region": {
+      "text": "Mondstadt",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Emblem_Mondstadt.png/revision/latest/scale-to-width-down/22?cb=20201116194623"
+    },
+    "Model Type": {
+      "text": "Medium Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Wanderer_Icon.png/revision/latest/scale-to-width-down/50?cb=20221207034209"
+    },
+    "Name": {
+      "text": "Wanderer"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Anemo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/1/10/Element_Anemo.svg/revision/latest/scale-to-width-down/22?cb=20220119211128"
+    },
+    "Weapon": {
+      "text": "Catalyst",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/Weapon-class-catalyst-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225852"
+    },
+    "Region": {
+      "text": "Sumeru",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/3/38/Emblem_Sumeru.png/revision/latest/scale-to-width-down/22?cb=20220718183140"
+    },
+    "Model Type": {
+      "text": "Medium Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/3/39/Xiangling_Icon.png/revision/latest/scale-to-width-down/50?cb=20210214011301"
+    },
+    "Name": {
+      "text": "Xiangling"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Pyro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Element_Pyro.svg/revision/latest/scale-to-width-down/22?cb=20220119211527"
+    },
+    "Weapon": {
+      "text": "Polearm",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Weapon-class-polearm-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225839"
+    },
+    "Region": {
+      "text": "Liyue",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Emblem_Liyue.png/revision/latest/scale-to-width-down/22?cb=20201116194654"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/fd/Xiao_Icon.png/revision/latest/scale-to-width-down/50?cb=20210214012045"
+    },
+    "Name": {
+      "text": "Xiao"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Anemo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/1/10/Element_Anemo.svg/revision/latest/scale-to-width-down/22?cb=20220119211128"
+    },
+    "Weapon": {
+      "text": "Polearm",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Weapon-class-polearm-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225839"
+    },
+    "Region": {
+      "text": "Liyue",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Emblem_Liyue.png/revision/latest/scale-to-width-down/22?cb=20201116194654"
+    },
+    "Model Type": {
+      "text": "Medium Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/d/d4/Xingqiu_Icon.png/revision/latest/scale-to-width-down/50?cb=20210214012057"
+    },
+    "Name": {
+      "text": "Xingqiu"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Hydro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Element_Hydro.svg/revision/latest/scale-to-width-down/22?cb=20220119211435"
+    },
+    "Weapon": {
+      "text": "Sword",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Weapon-class-sword-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225833"
+    },
+    "Region": {
+      "text": "Liyue",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Emblem_Liyue.png/revision/latest/scale-to-width-down/22?cb=20201116194654"
+    },
+    "Model Type": {
+      "text": "Medium Male"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/Xinyan_Icon.png/revision/latest/scale-to-width-down/50?cb=20210213163013"
+    },
+    "Name": {
+      "text": "Xinyan"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Pyro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Element_Pyro.svg/revision/latest/scale-to-width-down/22?cb=20220119211527"
+    },
+    "Weapon": {
+      "text": "Claymore",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Weapon-class-claymore-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225845"
+    },
+    "Region": {
+      "text": "Liyue",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Emblem_Liyue.png/revision/latest/scale-to-width-down/22?cb=20201116194654"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Yae_Miko_Icon.png/revision/latest/scale-to-width-down/50?cb=20220216025931"
+    },
+    "Name": {
+      "text": "Yae Miko"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Electro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Element_Electro.svg/revision/latest/scale-to-width-down/22?cb=20220119211156"
+    },
+    "Weapon": {
+      "text": "Catalyst",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/Weapon-class-catalyst-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225852"
+    },
+    "Region": {
+      "text": "Inazuma",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Emblem_Inazuma.png/revision/latest/scale-to-width-down/22?cb=20230127155005"
+    },
+    "Model Type": {
+      "text": "Tall Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/5/54/Yanfei_Icon.png/revision/latest/scale-to-width-down/50?cb=20210422063525"
+    },
+    "Name": {
+      "text": "Yanfei"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Pyro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Element_Pyro.svg/revision/latest/scale-to-width-down/22?cb=20220119211527"
+    },
+    "Weapon": {
+      "text": "Catalyst",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/Weapon-class-catalyst-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225852"
+    },
+    "Region": {
+      "text": "Liyue",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Emblem_Liyue.png/revision/latest/scale-to-width-down/22?cb=20201116194654"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/83/Yaoyao_Icon.png/revision/latest/scale-to-width-down/50?cb=20230123150446"
+    },
+    "Name": {
+      "text": "Yaoyao"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Dendro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Dendro.svg/revision/latest/scale-to-width-down/22?cb=20220119211226"
+    },
+    "Weapon": {
+      "text": "Polearm",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Weapon-class-polearm-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225839"
+    },
+    "Region": {
+      "text": "Liyue",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Emblem_Liyue.png/revision/latest/scale-to-width-down/22?cb=20201116194654"
+    },
+    "Model Type": {
+      "text": "Short Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/d/d3/Yelan_Icon.png/revision/latest/scale-to-width-down/50?cb=20220601033118"
+    },
+    "Name": {
+      "text": "Yelan"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Hydro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Element_Hydro.svg/revision/latest/scale-to-width-down/22?cb=20220119211435"
+    },
+    "Weapon": {
+      "text": "Bow",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/97/Weapon-class-bow-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225907"
+    },
+    "Region": {
+      "text": "Liyue",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Emblem_Liyue.png/revision/latest/scale-to-width-down/22?cb=20201116194654"
+    },
+    "Model Type": {
+      "text": "Tall Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Yoimiya_Icon.png/revision/latest/scale-to-width-down/50?cb=20220214235604"
+    },
+    "Name": {
+      "text": "Yoimiya"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Pyro",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Element_Pyro.svg/revision/latest/scale-to-width-down/22?cb=20220119211527"
+    },
+    "Weapon": {
+      "text": "Bow",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/97/Weapon-class-bow-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225907"
+    },
+    "Region": {
+      "text": "Inazuma",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Emblem_Inazuma.png/revision/latest/scale-to-width-down/22?cb=20230127155005"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9c/Yun_Jin_Icon.png/revision/latest/scale-to-width-down/50?cb=20220316025919"
+    },
+    "Name": {
+      "text": "Yun Jin"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
+    },
+    "Element": {
+      "text": "Geo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Element_Geo.svg/revision/latest/scale-to-width-down/22?cb=20220119211105"
+    },
+    "Weapon": {
+      "text": "Polearm",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Weapon-class-polearm-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225839"
+    },
+    "Region": {
+      "text": "Liyue",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Emblem_Liyue.png/revision/latest/scale-to-width-down/22?cb=20201116194654"
+    },
+    "Model Type": {
+      "text": "Medium Female"
+    }
+  },
+  {
+    "Icon": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/a/a6/Zhongli_Icon.png/revision/latest/scale-to-width-down/50?cb=20210213163026"
+    },
+    "Name": {
+      "text": "Zhongli"
+    },
+    "Quality": {
+      "text": "",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+    },
+    "Element": {
+      "text": "Geo",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Element_Geo.svg/revision/latest/scale-to-width-down/22?cb=20220119211105"
+    },
+    "Weapon": {
+      "text": "Polearm",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Weapon-class-polearm-icon.png/revision/latest/scale-to-width-down/22?cb=20210716225839"
+    },
+    "Region": {
+      "text": "Liyue",
+      "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Emblem_Liyue.png/revision/latest/scale-to-width-down/22?cb=20201116194654"
+    },
+    "Model Type": {
+      "text": "Tall Male"
+    }
+  }
+]

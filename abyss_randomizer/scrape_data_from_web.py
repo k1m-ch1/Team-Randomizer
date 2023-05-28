@@ -1,6 +1,7 @@
 import requests
 from bs4 import *
 import json
+import re
 
 CHARACTERS_URL = 'https://genshin-impact.fandom.com/wiki/Character/List'
 WEAPONS_URL = 'https://genshin-impact.fandom.com/wiki/Weapon' 
@@ -90,9 +91,25 @@ def format_table(table):
   return ret_list
 
 def get_formatted_table(table_name):
-  if (table:=SCRAPPED_TABLES_DATA.get(table_name, False)): return format_table(table)
+  if (table:=SCRAPPED_TABLES_DATA.get(table_name, False)):
+    formatted_table = format_table(table)
+    if table_name == 'characters':
+      # replacing the element for traveler from none to the list of available elements. this line returns a copy (I think)
+      traveler_hr = list(filter(lambda x: (x['Name']['text'] == 'Traveler'), formatted_table))[0]
+      
+      # get the reference to the dictionary (Since traveler_hr is just a copy i think)
+      traveler_hr_reference = formatted_table[formatted_table.index(traveler_hr)]
+      
+      # gets any element in Region table and checks for anything that matches 'Archon (Vessel)' format and store it back in the dictionary
+      traveler_hr_reference['Element']['text'] = list(map(lambda x: x['Element']['text'], filter(lambda x: re.search(r'.+\(.+\)', x['Archon (Vessel)']['text']) is not None, get_formatted_table('regions'))))
 
+      traveler_hr_reference['Model Type']['text'] = ["Medium Male", "Medium Female"]
+    return formatted_table
+  
 def get_element_from_column(table_name, column_name, info_key):
+  """
+    Gets the entire column given a table_name(stuff like 'characters', 'regions', ...), column_name and the info_key (stuff like 'text', 'img_src',...)
+  """
   ret_list = list()
   formatted_table = get_formatted_table(table_name)
   for hr in formatted_table:
@@ -102,6 +119,7 @@ def get_element_from_column(table_name, column_name, info_key):
 if __name__ == '__main__':
   target_table = 'characters'
   results = scrape_table_data(ALL_URLS)
-  write_data_as_str_to_txt_file(table=results[target_table], path=f'./test_two_{target_table}_results.txt')
+  # write_data_as_str_to_txt_file(table=results[target_table], path=f'./test_two_{target_table}_results.txt')
   with open(f'./test_two_{target_table}_json.json', 'w') as file:
-    file.write(json.dumps(format_table(results[target_table]), indent=2))
+    # file.write(json.dumps(format_table(results[target_table]), indent=2))
+    file.write(json.dumps(get_formatted_table('characters'), indent=2))
