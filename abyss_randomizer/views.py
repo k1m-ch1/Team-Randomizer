@@ -14,8 +14,6 @@ HEIGHT = ['Tall', 'Medium', 'Short']
 GENDER = ['Male', 'Female']
 MODEL_TYPE = reduce(add, (lambda x, y: list(map(lambda i: list(map(lambda j: i + ' ' + j, y)), x)))(HEIGHT, GENDER))
 
-def add_or_update_database():
-  pass
 
 # Create your views here.
 
@@ -32,6 +30,48 @@ def filter_object(django_table, **kwargs):
     return None
   else:
     return result
+  
+
+
+def add_update_or_pass_to_database(table_name, table_class, base_keys, update_keys, many_to_many_keys=None):
+  """
+    table_name is the name of the table like 'characters', 'regions', ...
+    table_class is the Model name of the table like Region, GenshinCharacters
+    update_keys is a dictionary that will be passed as arguments where the key is a name of the column of the Model table. The value will be a higher order function that will have a formatted_hr passed in
+    base_keys are the keys from update_keys that should be checked to prevent duplicates. For example if there's already a row for 'Traveler' but the new data has a different Element columns, we don't want another 'Traveler' row but instead we want to update the existing 'Traveler' row
+  """
+  
+  list_of_hr_formatted= scraper.get_formatted_table(table_name)
+  
+  for hr_formatted in list_of_hr_formatted:
+    new_row_non_rel = { k: v(hr_formatted) for k, v in update_keys.items()}
+    
+    if many_to_many_keys is not None:
+      
+      new_row_rel = { k: v(hr_formatted) for k, v in many_to_many_keys.items()}
+    else:
+      new_row_rel = None
+    
+    old_row = table_class.objects.filter(**{ k: v for k, v in new_row_non_rel.items() if k in base_keys})
+    
+    def compare_many_to_many():
+      table_class.objects.filter(**new_row_rel)
+    
+    
+    if len(table_class.objects.filter(**new_row_non_rel)) == 0 and many_to_many_keys:
+      # If doesn't exists or some field got changed
+      
+      if len(old_row) > 0:
+        # Check whether there's already a row that contains an identifier value. Indentifier value example: name of character, name of element, ...
+        old_row.update(**new_row_non_rel)
+        print(f'Updated a {table_class} table at {old_row}')
+      else:
+        # Else create a new table
+        table_class(**new_row_non_rel).save()
+        print(f'Created a new {table_class} called {old_row}')
+        
+  
+
 
 def index(request):
   weapons = scraper.get_formatted_table('weapons')
