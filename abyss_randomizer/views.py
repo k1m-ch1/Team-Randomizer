@@ -45,6 +45,7 @@ def add_update_or_pass_to_database(table_name, table_class, base_keys, update_ke
   
   for hr_formatted in list_of_hr_formatted:
     new_row_non_rel = { k: v(hr_formatted) for k, v in update_keys.items()}
+    # v(hr_formatted) will be a list that contains the many to many elements
     
     if many_to_many_keys is not None:
       
@@ -55,7 +56,9 @@ def add_update_or_pass_to_database(table_name, table_class, base_keys, update_ke
     old_row = table_class.objects.filter(**{ k: v for k, v in new_row_non_rel.items() if k in base_keys})
     
     def compare_many_to_many():
+      
       table_class.objects.filter(**new_row_rel)
+      
     
     
     if len(table_class.objects.filter(**new_row_non_rel)) == 0 and many_to_many_keys:
