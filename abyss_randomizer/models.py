@@ -39,9 +39,9 @@ class Region(models.Model):
 class GenshinCharacter(models.Model):
   name = models.CharField(null=False, blank=False, max_length=64)
   character_url = models.URLField(blank=True, null=True)
-  weapon = models.ForeignKey(WeaponType, on_delete=models.CASCADE)
-  quality = models.ForeignKey(Rarity, on_delete=models.CASCADE)
-  region = models.ForeignKey(Region, on_delete=models.CASCADE, null=True, blank=True)
+  weapon = models.ForeignKey(WeaponType, on_delete=models.CASCADE, related_name="characters")
+  quality = models.ForeignKey(Rarity, on_delete=models.CASCADE, related_name="characters")
+  region = models.ForeignKey(Region, on_delete=models.CASCADE, null=True, blank=True, related_name="characters")
   weapon = models.ForeignKey(WeaponType, on_delete=models.CASCADE, null=False, blank=False)
   element = models.ManyToManyField(ElementType, related_name="characters")
   model_type = models.ManyToManyField(ModelType, related_name="characters")
