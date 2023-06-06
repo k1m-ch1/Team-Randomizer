@@ -1,6 +1,8 @@
 from django.db import models
-
+from django.contrib.auth.models import AbstractUser
 # Create your models here.
+
+
 
 class ModelType(models.Model):
   name = models.CharField(null=False, blank=False, max_length=64)
@@ -8,11 +10,13 @@ class ModelType(models.Model):
   def __str__(self):
     return f'{self.name}'
 
+
 class WeaponType(models.Model):
   name = models.CharField(null=False, blank=False, max_length=64)
   icon_url = models.URLField(blank=True, null=True)
   def __str__(self):
     return f"Weapon name: {self.name}"
+
 
 class ElementType(models.Model):
   name = models.CharField(null=False, blank=False, max_length=64)
@@ -21,12 +25,14 @@ class ElementType(models.Model):
   def __str__(self):
     return f"Element name: {self.name}"
   
+  
 class Rarity(models.Model):
   star = models.IntegerField(null=False, blank=False)
   icon_url = models.URLField(blank=True, null=True)
 
   def __str__(self):
     return f"Rarity: {self.star}\nLink to url: {self.icon_url}"
+
 
 class Region(models.Model):
   name = models.CharField(null=False, blank=False, max_length=64)
@@ -35,6 +41,7 @@ class Region(models.Model):
   
   def __str__(self):
     return f'Region: {self.name}'
+  
   
 class GenshinCharacter(models.Model):
   name = models.CharField(null=False, blank=False, max_length=64)
@@ -49,4 +56,9 @@ class GenshinCharacter(models.Model):
   def __str__(self):
     return f"Character: {self.name}"
 
-
+class User(AbstractUser):
+  uid = models.IntegerField(null=True, blank=True)
+  ltuid = models.IntegerField(null=True, blank=True)
+  ltoken = models.CharField(null=True, blank=True, max_length=128)
+  characters = models.ManyToManyField(GenshinCharacter)
+  

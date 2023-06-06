@@ -19,9 +19,16 @@ from django.urls import path, include
 
 from . import views
 
+app_name = 'team_randomizer'
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('abyss_randomizer/', include('abyss_randomizer.urls'), name='abyss_randomizer'),
-    path('custom_randomizer/', include('custom_randomizer.urls'), name='custom_randomizer'),
+    path('abyss-randomizer/', include('abyss_randomizer.urls', namespace='abyss_randomizer'), name='abyss_randomizer'),
+    path('custom-randomizer/', include('custom_randomizer.urls', namespace='custom_randomizer'), name='custom_randomizer'),
+    path('login/', views.login_view, name='login'),
+    path('register/', views.register_view, name='register'),
+    path('logout/', views.logout_view, name='logout'),
+    path('user-profile/', views.user_profile, name='user_profile'),
+    path('get-user-data/', views.get_user_data, name='get_user_data'),
     path('', views.home, name='home')
 ]

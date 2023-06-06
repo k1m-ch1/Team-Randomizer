@@ -7,12 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{% static 'team_randomizer/css/header_styles.css' %}">
   <link rel="stylesheet" href="{% static 'team_randomizer/css/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'team_randomizer/css/alerts.css' %}">
   <style>
     @font-face {
       font-family: "genshin";
       src: url("{% static 'team_randomizer/fonts/zh-cn.ttf' %}") format('truetype');
     }
   </style>
+  <script>
+    const MY_CHARACTERS = 'myCharacters';
+    const ALL_CHARACTERS = 'allCharacters';
+    fetch("{% url 'abyss_randomizer:get_all_characters' %}")
+    .then(response => response.json())
+    .then(data => localStorage.setItem(ALL_CHARACTERS, JSON.stringify(data)));
+    console.log(`Set ${ALL_CHARACTERS} successfully`)
+    if (localStorage.getItem(MY_CHARACTERS) == null){
+      	localStorage.setItem(MY_CHARACTERS, localStorage.getItem(ALL_CHARACTERS))
+    }
+  </script>
   <script src="{% static 'team_randomizer/js/script.js' %}"></script>
   {% block script %}
   {% endblock %}
@@ -22,12 +34,24 @@
   {% endblock %}
 </head>
 <body class="secondary-background primary-color">
+    {% if message is not None%}
+      <div id='message' class="alert {{message.alert_class}}" role="alert">
+        {{ message.message }}
+      </div>
+    {% endif %}
   <header class="primary-color secondary-background">
     <a href="{% url 'home' %}">
       <h1 class="primary-color">TEAM RANDOMIZER</h1>
     </a>
 
     <nav>
+      {% if user.is_authenticated %}
+        <a class="secondary-color primaryButton-background" href="{% url 'logout' %}">Logout</a>
+        <a class="secondary-color primaryButton-background" href="{% url 'user_profile' %}">{{user.username}}'s profile</a>
+      {% else %}
+        <a class="secondary-color primaryButton-background" href="{% url 'register' %}">Register</a>
+        <a class="secondary-color primaryButton-background" href="{% url 'login' %}">Login</a>
+      {% endif %}
       <a class="secondary-color primaryButton-background" href="{% url 'abyss_randomizer:index' %}">Abyss Randomizer</a>
       <a class="secondary-color primaryButton-background" href="{% url 'custom_randomizer:index' %}">Custom Randomizer</a>
       <div id="theme-checkboxes">

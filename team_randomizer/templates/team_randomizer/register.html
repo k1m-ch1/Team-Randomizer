@@ -1,0 +1,41 @@
+{% extends 'team_randomizer/layout.html' %}
+
+{% block title %}
+<title>Register</title>
+{% endblock %}
+
+{% block body %}
+<h1>Register</h1>
+<form action="{% url 'register' %}" id="forms" method="post">
+  {% csrf_token %}
+  <div id="username">
+    <label for="username-field">
+      Username
+    </label>
+    <input id="username-field" name="username" type="text" placeholder="Username goes here..." required>
+  </div>
+  <div id="email">
+    <label for="email-field">
+      Email
+    </label>
+    <input id="email-field" name="email" type="text" placeholder="Email goes here..." required>
+  </div>
+  <div id="password">
+    <label for="password-field">
+      Password
+    </label>
+    <input id="password-field" name="password" type="password" placeholder="Password goes here..." required>
+  </div>
+  <div id="password-conformation">
+    <label for="password-conformation-field">
+      Password conformation
+    </label>
+    <input id="password-conformation-field" name="password-conformation" type="password" placeholder="Password-conformation goes here..." required>
+  </div>
+  <p>
+    Already have an account? Click <a href="{% url 'login' %}">here</a> to login
+  </p>
+  <input type="submit">
+</form>
+
+{% endblock %}

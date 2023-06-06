@@ -1,15 +1,95 @@
-
 {% extends 'team_randomizer/layout.html' %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'team_randomizer/css/character_content.css' %}">
+<link rel="stylesheet" href="{% static 'team_randomizer/css/abyss_randomizer.css' %}">
+{% endblock %}
 
+{% block script %}
+
+<script>
+  function characterCardTemplate(characterName, imgSrc) {
+    return `
+    <div class="character-card secondary-color accent-background-BF">
+      <img class="character-image" src="${imgSrc}">
+      <label>
+        ${characterName}
+      </label>
+      <input name="${characterName}" value="selected" type="checkbox">
+    </div>
+    `
+  }
+
+  function toggleDiv(element, show){
+    if (show){
+      element.style.display = 'block';
+    }
+    else {
+      element.style.display = 'none';
+    }
+  }
+
+  function getAndStoreContent(elementToStore, url){
+    fetch(url)
+    .then(response => response.json())
+    .then(data => Object.entries(data).forEach(character=>{
+      elementToStore.innerHTML += characterCardTemplate(character[0], character[1]);
+      setThemeAndRender(localStorage.getItem(RANDOMIZER_THEME));
+    }
+    ));
+  }
+
+  function toggleContent(charactersObj){
+    Object.entries(JSON.parse(localStorage.getItem(ALL_CHARACTERS))).forEach(arr => {
+      if (arr[0] in charactersObj){
+        document.getElementsByName(arr[0])[0].checked = true;
+      }
+      else{
+        document.getElementsByName(arr[0])[0].checked = false;
+      }
+    })
+  }
+
+
+
+  document.addEventListener('DOMContentLoaded', function(){
+    const POPUP_ELEMENT = document.querySelector('#popup');
+    toggleDiv(POPUP_ELEMENT, false);
+    //getAndStoreContent(document.querySelector('.character-content'), "{% url 'abyss_randomizer:get_characters' %}");
+    getAndStoreContent(document.querySelector('.character-content'), "{% url 'abyss_randomizer:get_all_characters' %}");
+    document.querySelector('#character-selection').onclick = function(){
+      toggleDiv(POPUP_ELEMENT, true);
+    }
+  })
+
+</script>
+{% endblock %}
 {% block body %}
-<h1>Hello, Abyss randomizer!</h1>
+<h1>Abyss randomizer</h1>
 
-<section>
-  <h2>All characters: </h2>
-  <ol>
-    {% for character in characters %}
-      <li>{{ character }}</li>
-    {% endfor %}
-  </ol>
-</section>
+<div id="popup" class="primary-background-FF">
+  <button id="esc-popup" onclick="toggleDiv(document.querySelector('#popup'), false)">X</button>
+  <div class="character-content primary-background-3F">
+  </div>
+
+  {% if user.is_authenticated %}
+    <label class="secondary-color" for="select-your-character" id="setting-input">
+      <input type='radio' id="select-your-character" name="randomizer-setting" value="your-character">
+      Use your characters
+    </label>
+    <label class="secondary-color" for="select-your-character" id="setting-input">
+      <input type='radio' id="select-local-character" name="randomizer-setting" value="local-character">
+      Use characters locally
+    </label>
+    <label class="secondary-color" for="select-all" id="setting-input">
+      <input type="checkbox" id="select-all">
+      Select all
+    </label>
+  {% endif %}
+  <button >Save</button>
+</div>
+<nav>
+  <button id="character-selection" >Characters</button>
+  <button id="character-filter">Filter</button>
+</nav>
 {% endblock %}

@@ -1,0 +1,28 @@
+.character-content {
+  padding: 3em 5em;
+  border-radius: 5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  gap: 1em;
+}
+
+.character-card{
+  font-family: "genshin";
+  height: 6em;
+  overflow: visible;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 0.5em 0;
+  border-radius: 10px;
+} 
+
+.character-image {
+  width: 3em;
+  margin: 0 auto 0 auto;
+}
+
+label {
+  display: block;
+  text-align: center;
+} 
+

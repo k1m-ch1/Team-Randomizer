@@ -42,6 +42,18 @@ function setThemeAndRender(themeToSet=null){
     document.querySelectorAll(`.${colorType}-background`).forEach(element => {
       element.style.backgroundColor = theme[colorType];
     });
+
+    //setting every alpha value for every color
+    for(let i = 0; i <= 0xFF; i++){
+      let alphaValue = i.toString(16).toUpperCase()
+      document.querySelectorAll(`.${colorType}-color-${alphaValue}`).forEach(element => {
+        element.style.color = theme[colorType]+alphaValue;
+      });
+      document.querySelectorAll(`.${colorType}-background-${alphaValue}`).forEach(element => {
+        element.style.backgroundColor = theme[colorType]+alphaValue;
+      });
+    }
+    
   })
 
   //toggle the radio button
@@ -62,4 +74,13 @@ document.addEventListener('DOMContentLoaded', function(){
       }
     }
   })
+
+  // Hide message block
+  message_div = document.querySelector('#message') 
+  if(message_div != null){
+    setTimeout(() => {
+      message_div.style.display = 'none';
+    },5000)
+  }
+
 })

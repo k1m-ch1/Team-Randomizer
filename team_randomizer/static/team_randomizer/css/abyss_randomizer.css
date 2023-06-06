@@ -1,0 +1,26 @@
+nav {
+  text-align: right;
+}
+
+.character-card {
+  font-size: 1em;
+}
+
+#popup {
+  position: fixed;
+  width: 75%;
+  top: 50%;
+  left: 50%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+  overflow-y: scroll;
+  text-align: right;
+}
+
+#setting-input {
+  display: inline-block;
+}
+
+#esc-popup{
+  
+}

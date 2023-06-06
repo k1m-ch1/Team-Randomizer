@@ -1,0 +1,76 @@
+{% extends 'team_randomizer/layout.html' %}
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'team_randomizer/css/character_content.css'%}">
+{% endblock %}
+
+
+{% block body %}
+
+<form action="{% url 'user_profile' %}" method="post">
+  {% csrf_token %}
+  <table class="primary-color">
+  <tr>
+    <td>
+      Name
+    </td>
+    <td>
+      {{ user.username }}
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Email
+    </td>
+    <td>
+      {{ user.email }}
+    </td>
+  </tr>
+  <tr>
+    <td>
+      uid
+    </td>
+    <td>
+      <input name="uid" type="number" value="{{ user.uid }}">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      ltuid
+    </td>
+    <td>
+      <input name="ltuid" type="number" value="{{ user.ltuid }}">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      ltoken
+    </td>
+    <td>
+      {% if user.ltoken is None%}
+        <input name="ltoken" type="text" value="">
+      {% else %}
+        <input name="ltoken" type="text" value="{{ user.ltoken }}">
+      {% endif %}
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <input type="submit" value="Save">
+    </td>
+  </tr>
+  </table>
+</form>
+<h1>Your characters: </h1>
+<div class="character-content primary-background-3F">
+  {% for character in your_characters %}
+  <div class="character-card secondary-color accent-background-BF">
+      <img class="character-image" src="{{character.character_url}}">
+      <label>
+        {{character.name}}
+      </label>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}

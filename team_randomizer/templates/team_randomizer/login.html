@@ -1,0 +1,31 @@
+{% extends 'team_randomizer/layout.html' %}
+
+{% block title %}
+
+<title>Login</title>
+{% endblock %}
+
+
+{% block body %}
+<h1>Login</h1>
+<form id="forms" action="{% url 'login' %}" method="post">
+  {% csrf_token %}
+  <div id="username">
+    <label for="username-field">
+      Username
+    </label>
+    <input id="username-field" name="username" type="text" placeholder="Username goes here..." required>
+  </div>
+  <div id="password">
+    <label for="password-field">
+      Password
+    </label>
+    <input id="password-field" name="password" type="password" placeholder="Password goes here..." required>
+  </div>
+  <p>
+    Don't have an account? Click <a href="{% url 'register' %}">here</a> register
+  </p>
+  <input type="submit" class="primaryButton-background secondary-color">
+</form>
+
+{% endblock %}
