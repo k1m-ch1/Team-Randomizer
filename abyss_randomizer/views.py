@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponseBadRequest
+from django.views.decorators.csrf import csrf_exempt
 
 import requests
 from .models import *
@@ -177,7 +178,29 @@ def get_ltuid_and_ltoken(request):
   return JsonResponse(genshin_info.get_browser_cookies())
 
 def get_all_characters(request):
-  return JsonResponse({character.name:character.character_url for character in GenshinCharacter.objects.all()}, safe=False)
+  if request.method == 'GET':
+    return JsonResponse({character.name:character.character_url for character in GenshinCharacter.objects.all()}, safe=False)
+  return HttpResponseBadRequest()
 
 def get_characters(request):
   return JsonResponse({character.name:character.character_url for character in request.user.characters.all()}, safe=False)
+
+def get_character(request):
+  if request.method == 'GET':
+    try:
+      character = GenshinCharacter.objects.get(name=request.GET['character-name'])
+      return JsonResponse({character.name:character.character_url})
+    except:
+      return HttpResponseBadRequest('Character doesn\'t exist')
+
+def get_all_tables(request):
+  get_all_row_name = lambda table_class, attr: [getattr(table_row, attr) for table_row in table_class.objects.all()]
+  table_data = {
+    'characters': {character.name:character.character_url for character in GenshinCharacter.objects.all()},
+    'elements': [get_all_row_name(ElementType, 'name')],
+    'weapons': [get_all_row_name(WeaponType, 'name')],
+    'rarity': [get_all_row_name(Rarity, 'star')],
+    'region': [get_all_row_name(Region, 'name')],
+    'model type': [get_all_row_name(ModelType, 'name')]
+  }
+  return JsonResponse(table_data)

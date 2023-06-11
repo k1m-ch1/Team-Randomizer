@@ -6,7 +6,7 @@ nav {
   font-size: 1em;
 }
 
-#popup {
+#popup-character-selection{
   position: fixed;
   width: 75%;
   top: 50%;
@@ -21,6 +21,14 @@ nav {
   display: inline-block;
 }
 
+th {
+  font-size: 1.2rem;
+  text-align: start;
+}
+
+table {
+  margin-left: auto;
+}
 #esc-popup{
   
 }

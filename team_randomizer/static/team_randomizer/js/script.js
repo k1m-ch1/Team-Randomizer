@@ -19,7 +19,8 @@ const THEME = {
 const DEFAULT_THEME = Object.keys(THEME)[0];
 
 function setThemeAndRender(themeToSet=null){
-  
+  console.log(themeToSet);
+
   // check for prev state and set to default if no saved state
   const prevThemeState = localStorage.getItem(RANDOMIZER_THEME);
   if (prevThemeState === null || !prevThemeState in THEME){
@@ -35,31 +36,55 @@ function setThemeAndRender(themeToSet=null){
   const currentTheme = localStorage.getItem(RANDOMIZER_THEME)
   // set the class name equals to colors
   const theme = THEME[currentTheme];
+  let baseThemeForCss = '';
+  let colorForCss = '';
+  let backgroundColorForCss = '';
+  let alphaColorForCss = '';
+  let alphaBackgroundColorForCss = '';
   Object.keys(theme).forEach(colorType => {
-    document.querySelectorAll(`.${colorType}-color`).forEach(element => {
-      element.style.color = theme[colorType];
-    });
-    document.querySelectorAll(`.${colorType}-background`).forEach(element => {
-      element.style.backgroundColor = theme[colorType];
-    });
+    baseThemeForCss += `--${colorType}: ${theme[colorType]};`;
+    colorForCss += 
+    `.${colorType}-color{
+      color: ${theme[colorType]}
+    }\n`;
+
+    backgroundColorForCss += 
+    `.${colorType}-background {
+      background-color: ${theme[colorType]};
+    }\n`;
 
     //setting every alpha value for every color
     for(let i = 0; i <= 0xFF; i++){
       let alphaValue = i.toString(16).toUpperCase()
-      document.querySelectorAll(`.${colorType}-color-${alphaValue}`).forEach(element => {
-        element.style.color = theme[colorType]+alphaValue;
-      });
-      document.querySelectorAll(`.${colorType}-background-${alphaValue}`).forEach(element => {
-        element.style.backgroundColor = theme[colorType]+alphaValue;
-      });
+      alphaColorForCss += 
+      `.${colorType}-color-${alphaValue} {
+        color: ${theme[colorType]+alphaValue};
+      }\n`;
+      alphaBackgroundColorForCss += 
+      `.${colorType}-background-${alphaValue} {
+        background-color: ${theme[colorType]+alphaValue};
+      }\n`
     }
-    
   })
-
+  
+  
   //toggle the radio button
   const currentCheckbox = document.querySelector(`#${currentTheme}-checkbox`)
   currentCheckbox.value = "on";
   currentCheckbox.checked = true;
+  
+  //loading css
+  document.querySelector('head').innerHTML += 
+  `<style>
+  :root {
+    ${baseThemeForCss}
+  }
+    ${colorForCss}
+    ${backgroundColorForCss}
+    ${alphaColorForCss}
+    ${alphaBackgroundColorForCss}
+    </style>`;
+  console.log('loaded the css!');
 }
 
 
