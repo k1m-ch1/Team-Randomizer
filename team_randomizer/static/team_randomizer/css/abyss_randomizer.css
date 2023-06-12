@@ -28,7 +28,29 @@ th {
 
 table {
   margin-left: auto;
+  table-layout: fixed;
+  width: 100%;
 }
+
+th,td {
+  width: 20%;
+}
+
+#popup-filter {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.2rem solid var(--accent);
+}
+
+#character-card-checkbox[disabled][checked] {
+  filter: invert(100%) hue-rotate(18deg) brightness(5);
+}
+#character-card-checkbox[disabled] {
+  filter: invert(100%) hue-rotate(18deg) brightness(5);
+}
+
+
 #esc-popup{
   
 }

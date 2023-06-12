@@ -21,9 +21,15 @@
       <label>
         ${characterName}
       </label>
-      <input name="${characterName}" value="selected" type="checkbox">
+      <input name="${characterName}" id="character-card-checkbox" type="checkbox">
     </div>
     `
+  }
+
+  function disableOrEnable(disable, identifier){
+    document.querySelectorAll(identifier).forEach(input => {
+      input.disabled = disable;
+    })
   }
 
   function toggleDiv(element, show){
@@ -67,16 +73,15 @@
     if (!isAuthenticated || JSON.parse(localStorage.getItem(USE_LOCAL))){  
       localStorage.setItem(MY_CHARACTERS, JSON.stringify(yourCharacters));
     }
-    else {
-      alert(`Note that the save button doesn't do anything as you are not in local mode`);
-    }
     toggleDiv(document.querySelector('#popup-character-selection'), false);
   }
 
   function autoToggleContent(){
-    if (JSON.parse(localStorage.getItem(USE_LOCAL))){
+    let use_local = JSON.parse(localStorage.getItem(USE_LOCAL)); 
+    if (use_local){
       toggleContent(JSON.parse(localStorage.getItem(MY_CHARACTERS)))
       document.querySelector('#select-local-character').checked = true;
+      document.querySelector('#select-all').disabled = false;
     }
     else {
       localStorage.setItem(USE_LOCAL, false)
@@ -84,7 +89,9 @@
       .then(response => response.json())
       .then(data => toggleContent(data))
       document.querySelector('#select-your-character').checked = true;
+      document.querySelector('#select-all').disabled = true;
     }
+    disableOrEnable(!use_local, '#character-card-checkbox');
   }
 
   function switchMode(useLocal){
@@ -93,14 +100,14 @@
   }
 
   function selectAll(isSelectAll){
-    isSelectAll? toggleContent(JSON.parse(localStorage.getItem(ALL_CHARACTERS))):autoToggleContent()
+    isSelectAll? toggleContent(JSON.parse(localStorage.getItem(ALL_CHARACTERS))):autoToggleContent();
   }
 
   function getColLenFromTableDataFormat(tableDataFormat){
     //tableDataFormat is {'your table header': ['your element at col 1', 'your element at col 2', ...]}
     let retArr = [];
     Object.entries(tableDataFormat).forEach(table => {
-      retArr.push(table[1][0].length);
+      retArr.push(table[1].length);
     })
     return retArr;
   }
@@ -109,7 +116,7 @@
      //tableDataFormat is {'your table header': ['your element at col 1', 'your element at col 2', ...]}
      let retArr = [];
      Object.entries(tableDataFormat).forEach(table => {
-       retArr.push((table[1][0][index]) === undefined? null : table[1][0][index]);
+       retArr.push((table[1][index]) === undefined? null : table[1][index]);
      })
      return retArr;
   }
@@ -117,9 +124,9 @@
   function cvtRowToHtml(row, isTh){
     //row you get from getRow function, type can be 
     let retStr = '';
-    let element = isTh? ['th', ''] : ['td', "<input type='checkbox'>"]
+    let element = isTh? ['th', '', text => text.charAt(0).toUpperCase() + text.slice(1)] : ['td', "<input type='checkbox'>", text => text]
     row.forEach(cell => {
-      retStr += `<${element[0]}> ${cell === null? '': element[1]} ${cell}</${element[0]}>`
+      retStr += `<${element[0]}> ${cell === null? '': element[1] + element[2](cell)}</${element[0]}>`
     })
     return retStr
   }
@@ -146,8 +153,6 @@
       let tableData = JSON.parse(localStorage.getItem(TABLE_DATA));
       delete tableData.characters;
       let filterContent = '';
-     console.log(getColLenFromTableDataFormat(tableData));
-      console.log(Math.max(...getColLenFromTableDataFormat(tableData)));
       let tableDataForRender = [];
   
       for (let i = 0; i < Math.max(...getColLenFromTableDataFormat(tableData)); i++){
@@ -187,8 +192,8 @@
   <button id="esc-popup-character-selection" onclick="toggleDiv(document.querySelector('#popup-character-selection'), false)">X</button>
   <div id="popup-filter" class="secondary-color primary-background-FF">
     <button id="esc-popup-filter" onclick="toggleDiv(document.querySelector('#popup-filter'), false)">X</button>
+    <h2 style="text-align: left;">Filter by:</h2>
     <div id="popup-filter-content"class="primary-background-3F">
-
     </div>
     <button onclick="">Save</button>
   </div>
@@ -206,7 +211,7 @@
     </label>
     {% endif %}
     <label class="secondary-color" for="select-all" id="setting-input">
-      <input type="checkbox" id="select-all">
+      <input onchange="selectAll(this.checked)" type="checkbox" id="select-all">
       Select all
     </label>
   <button onclick="saveCharacters()">Save</button>

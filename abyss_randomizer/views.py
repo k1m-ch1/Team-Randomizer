@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import JsonResponse, HttpResponseBadRequest
+from django.http import JsonResponse, HttpResponseBadRequest, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 
 import requests
@@ -9,6 +9,7 @@ import re
 from functools import reduce
 from operator import *
 from . import genshin_info
+import json
 
 
 GENSHIN_CHARACTER_URL = 'https://genshin-impact.fandom.com/wiki/Character'
@@ -197,10 +198,21 @@ def get_all_tables(request):
   get_all_row_name = lambda table_class, attr: [getattr(table_row, attr) for table_row in table_class.objects.all()]
   table_data = {
     'characters': {character.name:character.character_url for character in GenshinCharacter.objects.all()},
-    'elements': [get_all_row_name(ElementType, 'name')],
-    'weapons': [get_all_row_name(WeaponType, 'name')],
-    'rarity': [get_all_row_name(Rarity, 'star')],
-    'region': [get_all_row_name(Region, 'name')],
-    'model type': [get_all_row_name(ModelType, 'name')]
+    'elements': get_all_row_name(ElementType, 'name'),
+    'weapons': get_all_row_name(WeaponType, 'name'),
+    'rarity': get_all_row_name(Rarity, 'star'),
+    'region': get_all_row_name(Region, 'name'),
+    'model type': get_all_row_name(ModelType, 'name')
   }
   return JsonResponse(table_data)
+
+@csrf_exempt
+def randomize(request):
+  print('Request type:', type(request))
+  print('Request:', request)
+  print('Request methods:', dir(request))
+  print('Request body:', request.body)
+  print('Request GET:', request.POST)
+  data = json.loads(request.body)
+  return JsonResponse(data)
+  
