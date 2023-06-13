@@ -12,6 +12,7 @@ urlpatterns = [
     path('get-ltuid-ltoken/', views.get_ltuid_and_ltoken, name='get_ltuid_ltoken'),
     path('get-characters', views.get_characters, name='get_characters'),
     path('get-character', views.get_character, name='get_character'),
-    path('get-all-tables', views.get_all_tables, name='get_all_tables'),
+    path('get-character-schema', views.get_character_schema, name='get_character_schema'),
+    path('filter-characters', views.filter_characters, name='filter_characters'),
     path('randomize', views.randomize, name='randomize')
 ]

@@ -194,16 +194,58 @@ def get_character(request):
     except:
       return HttpResponseBadRequest('Character doesn\'t exist')
 
-def get_all_tables(request):
+
+TABLE_DATA_MAPPER = {
+  'elements': (ElementType, 'name', 'element', True),
+  'weapons': (WeaponType, 'name', 'weapon', False),
+  'rarity': (Rarity, 'star', 'quality', False),
+  'region': (Region, 'name', 'region', False),
+  'model type': (ModelType, 'name', 'model_type', True)
+}
+
+def filter_characters_from_db_single_attr(attr_name, chosen_attr, character_pool):
+  """
+    Filters only a single attribute from the data pool. Returns a list.
+  """
+  if len(chosen_attr) == 0 or len(character_pool) == 0:
+    return []
+  else:
+    template_attr = TABLE_DATA_MAPPER[attr_name]
+    first_attr = chosen_attr.pop()
+    attr_for_comparison = template_attr[0].objects.get(**{template_attr[1]:first_attr})
+    
+    def auto_compare_rel(attr_primary, attr_lookup):
+      if template_attr[3]:
+        print(f'Attr "{attr_name}" lookup:', attr_lookup.all())
+        return attr_primary in set(attr_lookup.all())
+      else:
+        print(f'Attr {attr_name} lookup not many to many:', attr_lookup)
+        
+        return attr_primary == attr_lookup
+    
+    after_filtering = [character for character in character_pool if auto_compare_rel(attr_for_comparison, getattr(character, TABLE_DATA_MAPPER[attr_name][2]))]
+    return  after_filtering + filter_characters_from_db_single_attr(attr_name, chosen_attr, character_pool)
+
+
+def filter_characters_from_db(attr_to_use_as_li, character_pool):
+  """
+    attr_to_use_as_li is a list representation of a dictionary using dict.items() method. It represents the attributes in use, structure like one that's stored in the localstorage .
+    character_pool is a set and contains all of the characters that will be filtered.
+    returns a set of characters
+  """
+  attr_name, chosen_attr = attr_to_use_as_li.pop()
+  # print('Attr name:', attr_name)
+  if len(attr_to_use_as_li) == 0:
+    return character_pool
+  else:
+    character_after_filter = filter_characters_from_db_single_attr(attr_name, chosen_attr, character_pool)
+    # print('Character after filter: ', character_after_filter)
+    return filter_characters_from_db(attr_to_use_as_li, character_after_filter)
+  
+
+def get_character_schema(request):
   get_all_row_name = lambda table_class, attr: [getattr(table_row, attr) for table_row in table_class.objects.all()]
-  table_data = {
-    'characters': {character.name:character.character_url for character in GenshinCharacter.objects.all()},
-    'elements': get_all_row_name(ElementType, 'name'),
-    'weapons': get_all_row_name(WeaponType, 'name'),
-    'rarity': get_all_row_name(Rarity, 'star'),
-    'region': get_all_row_name(Region, 'name'),
-    'model type': get_all_row_name(ModelType, 'name')
-  }
+  table_data = {key:get_all_row_name(value[0], value[1]) for key, value in TABLE_DATA_MAPPER.items()}
   return JsonResponse(table_data)
 
 @csrf_exempt
@@ -216,3 +258,16 @@ def randomize(request):
   data = json.loads(request.body)
   return JsonResponse(data)
   
+@csrf_exempt
+def filter_characters(request):
+  if request.method == 'POST':
+    # try:
+    loaded_table = json.loads(request.body.decode('utf-8'))
+    loaded_table = json.loads(loaded_table)
+    ret_val = filter_characters_from_db(list(loaded_table.items()), set(GenshinCharacter.objects.all()))
+    print(ret_val)
+    print(len(ret_val))
+    return HttpResponse('Epic!')
+    # except:
+    #   return HttpResponseBadRequest(f"Wrong incorrect data")
+  return HttpResponseBadRequest(f"Doesn't support {request.method} request, can only post")

@@ -51,14 +51,21 @@
   }
 
   function toggleContent(charactersObj){
-    Object.entries(JSON.parse(localStorage.getItem(ALL_CHARACTERS))).forEach(arr => {
-      if (arr[0] in charactersObj){
-        document.getElementsByName(arr[0])[0].checked = true;
-      }
-      else{
-        document.getElementsByName(arr[0])[0].checked = false;
-      }
-    })
+    try {
+      Object.entries(JSON.parse(localStorage.getItem(ALL_CHARACTERS))).forEach(arr => {
+        if (arr[0] in charactersObj){
+          document.getElementsByName(arr[0])[0].checked = true;
+        }
+        else{
+          document.getElementsByName(arr[0])[0].checked = false;
+        }
+      })
+    }
+    catch(err){
+      localStorage.clear();
+      alert(`Ran into ${err}. Local storage cleared. Reloading!`);
+      location.reload();
+    }
   }
 
   function saveCharacters(){
@@ -77,21 +84,28 @@
   }
 
   function autoToggleContent(){
-    let use_local = JSON.parse(localStorage.getItem(USE_LOCAL)); 
-    if (use_local){
-      toggleContent(JSON.parse(localStorage.getItem(MY_CHARACTERS)))
-      document.querySelector('#select-local-character').checked = true;
-      document.querySelector('#select-all').disabled = false;
+    try{
+      let use_local = JSON.parse(localStorage.getItem(USE_LOCAL)); 
+      if (use_local){
+        toggleContent(JSON.parse(localStorage.getItem(MY_CHARACTERS)))
+        document.querySelector('#select-local-character').checked = true;
+        document.querySelector('#select-all').disabled = false;
+      }
+      else {
+        localStorage.setItem(USE_LOCAL, false)
+        fetch("{% url 'abyss_randomizer:get_characters' %}")
+        .then(response => response.json())
+        .then(data => toggleContent(data))
+        document.querySelector('#select-your-character').checked = true;
+        document.querySelector('#select-all').disabled = true;
+      }
+      disableOrEnable(!use_local, '#character-card-checkbox');
     }
-    else {
-      localStorage.setItem(USE_LOCAL, false)
-      fetch("{% url 'abyss_randomizer:get_characters' %}")
-      .then(response => response.json())
-      .then(data => toggleContent(data))
-      document.querySelector('#select-your-character').checked = true;
-      document.querySelector('#select-all').disabled = true;
+    catch(err){
+      localStorage.clear();
+      alert(`Ran into ${err}, resetted your local storage. Reloading the page!`);
+      location.reload();
     }
-    disableOrEnable(!use_local, '#character-card-checkbox');
   }
 
   function switchMode(useLocal){
@@ -151,7 +165,6 @@
     document.querySelector('#character-filter').onclick = function(){
       toggleDiv(POPUP_FILTER, true);
       let tableData = JSON.parse(localStorage.getItem(TABLE_DATA));
-      delete tableData.characters;
       let filterContent = '';
       let tableDataForRender = [];
   

@@ -19,17 +19,25 @@
     const ALL_CHARACTERS = 'allCharacters';
     const USE_LOCAL = 'useLocal';
     const TABLE_DATA = 'tableData';
-    fetch("{% url 'abyss_randomizer:get_all_tables' %}")
+    fetch("{% url 'abyss_randomizer:get_character_schema' %}")
     .then(response => response.json())
     .then(data => {
-      localStorage.setItem(ALL_CHARACTERS, JSON.stringify(data['characters']));
       localStorage.setItem(TABLE_DATA, JSON.stringify(data));
-      
     });
-    console.log(`Set ${ALL_CHARACTERS} successfully`)
-    if (localStorage.getItem(MY_CHARACTERS) == null){
-      	localStorage.setItem(MY_CHARACTERS, localStorage.getItem(ALL_CHARACTERS));
-    }
+    fetch("{% url 'abyss_randomizer:get_all_characters' %}")
+    .then(response => response.json())
+    .then(data => {
+      localStorage.setItem(ALL_CHARACTERS, JSON.stringify(data));
+      console.log(`Set ${ALL_CHARACTERS} successfully`);
+      try{
+        if (JSON.parse(localStorage.getItem(MY_CHARACTERS)) === null){
+            localStorage.setItem(MY_CHARACTERS, localStorage.getItem(ALL_CHARACTERS));
+        }
+      }
+      catch(err){
+        localStorage.setItem(MY_CHARACTERS, localStorage.getItem(ALL_CHARACTERS));
+      }
+    })
 
     if (!(localStorage.getItem(USE_LOCAL) in {true:null,  false:null})){
       localStorage.setItem(USE_LOCAL, false);
