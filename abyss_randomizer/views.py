@@ -25,22 +25,28 @@ def get_object(django_table, **kwargs):
     Is an alternative to the native element.objects.get(attr1="...")
     Doesn't return error if there isn't any element or if there are multiple elements.
   """
-  result = django_table.objects.filter(**kwargs)
-  if len(result) == 0:
+  try:
+    result = django_table.objects.filter(**kwargs)
+    if len(result) == 0:
+      return None
+    else:
+      return result.first()
+  except:
     return None
-  else:
-    return result.first()
 
 def filter_object(django_table, **kwargs):
   """
     Is an alternative to the native element.objects.filter(attr1="...", attr2="...",...)
     Returns None instead of empty set if no sign of element
   """
-  result = django_table.objects.filter(**kwargs)
-  if len(result) == 0:
+  try:
+    result = django_table.objects.filter(**kwargs)
+    if len(result) == 0:
+      return None
+    else:
+      return result
+  except:
     return None
-  else:
-    return result
   
 
 def is_same_set(query_set_a, query_set_b, comparison_attribute):
@@ -212,15 +218,14 @@ def filter_characters_from_db_single_attr(attr_name, chosen_attr, character_pool
   else:
     template_attr = TABLE_DATA_MAPPER[attr_name]
     first_attr = chosen_attr.pop()
-    attr_for_comparison = template_attr[0].objects.get(**{template_attr[1]:first_attr})
+    attr_for_comparison = get_object(template_attr[0], **{template_attr[1]:first_attr})
     
     def auto_compare_rel(attr_primary, attr_lookup):
       if template_attr[3]:
-        print(f'Attr "{attr_name}" lookup:', attr_lookup.all())
+        # print(f'Attr "{attr_name}" lookup:', attr_lookup.all())
         return attr_primary in set(attr_lookup.all())
       else:
-        print(f'Attr {attr_name} lookup not many to many:', attr_lookup)
-        
+        # print(f'Attr {attr_name} lookup not many to many:', attr_lookup)
         return attr_primary == attr_lookup
     
     after_filtering = [character for character in character_pool if auto_compare_rel(attr_for_comparison, getattr(character, TABLE_DATA_MAPPER[attr_name][2]))]
@@ -233,19 +238,22 @@ def filter_characters_from_db(attr_to_use_as_li, character_pool):
     character_pool is a set and contains all of the characters that will be filtered.
     returns a set of characters
   """
-  attr_name, chosen_attr = attr_to_use_as_li.pop()
-  # print('Attr name:', attr_name)
+
   if len(attr_to_use_as_li) == 0:
     return character_pool
   else:
+    attr_name, chosen_attr = attr_to_use_as_li.pop()
     character_after_filter = filter_characters_from_db_single_attr(attr_name, chosen_attr, character_pool)
     # print('Character after filter: ', character_after_filter)
-    return filter_characters_from_db(attr_to_use_as_li, character_after_filter)
+    ret_val = list(set(filter_characters_from_db(attr_to_use_as_li, character_after_filter)))
+    # print('Attr name: ', attr_name)
+    # print(ret_val)
+    return ret_val
   
 
 def get_character_schema(request):
-  get_all_row_name = lambda table_class, attr: [getattr(table_row, attr) for table_row in table_class.objects.all()]
-  table_data = {key:get_all_row_name(value[0], value[1]) for key, value in TABLE_DATA_MAPPER.items()}
+  get_all_row_name = lambda table_class, attr: [str(getattr(table_row, attr)) for table_row in table_class.objects.all()]
+  table_data = {key:get_all_row_name(value[0], value[1])+['None'] for key, value in TABLE_DATA_MAPPER.items()}
   return JsonResponse(table_data)
 
 @csrf_exempt
@@ -262,12 +270,10 @@ def randomize(request):
 def filter_characters(request):
   if request.method == 'POST':
     # try:
-    loaded_table = json.loads(request.body.decode('utf-8'))
-    loaded_table = json.loads(loaded_table)
+    loaded_table = json.loads(request.body)
     ret_val = filter_characters_from_db(list(loaded_table.items()), set(GenshinCharacter.objects.all()))
-    print(ret_val)
-    print(len(ret_val))
-    return HttpResponse('Epic!')
+    
+    return JsonResponse({char.name:char.character_url for char in ret_val}, safe=False)
     # except:
     #   return HttpResponseBadRequest(f"Wrong incorrect data")
   return HttpResponseBadRequest(f"Doesn't support {request.method} request, can only post")

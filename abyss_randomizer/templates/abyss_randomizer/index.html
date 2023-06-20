@@ -16,7 +16,7 @@
 <script>
   function characterCardTemplate(characterName, imgSrc) {
     return `
-    <div class="character-card secondary-color accent-background-BF">
+    <div id="${characterName}" class="character-card secondary-color accent-background-BF">
       <img class="character-image" src="${imgSrc}">
       <label>
         ${characterName}
@@ -41,8 +41,14 @@
     }
   }
 
-  function getAndStoreContent(elementToStore, url){
-    fetch(url)
+  async function getAndStoreContent(elementToStore, url, tableData){
+    console.log('storing content...')
+    elementToStore.innerHTML = '';
+    console.log('Table Data: ', tableData);
+    await fetch(url, {
+      method: 'POST',
+      body: tableData
+    })
     .then(response => response.json())
     .then(data => Object.entries(data).forEach(character=>{
       elementToStore.innerHTML += characterCardTemplate(character[0], character[1]);
@@ -52,17 +58,14 @@
 
   function toggleContent(charactersObj){
     try {
-      Object.entries(JSON.parse(localStorage.getItem(ALL_CHARACTERS))).forEach(arr => {
-        if (arr[0] in charactersObj){
-          document.getElementsByName(arr[0])[0].checked = true;
-        }
-        else{
-          document.getElementsByName(arr[0])[0].checked = false;
-        }
+      getCharactersFromHtml().forEach(character => {
+        document.querySelector(`input[name="${character}"]`).checked = (character in charactersObj);
       })
+      
     }
     catch(err){
       localStorage.clear();
+      console.error(err);
       alert(`Ran into ${err}. Local storage cleared. Reloading!`);
       location.reload();
     }
@@ -83,7 +86,7 @@
     toggleDiv(document.querySelector('#popup-character-selection'), false);
   }
 
-  function autoToggleContent(){
+  async function autoToggleContent(){
     try{
       let use_local = JSON.parse(localStorage.getItem(USE_LOCAL)); 
       if (use_local){
@@ -93,7 +96,7 @@
       }
       else {
         localStorage.setItem(USE_LOCAL, false)
-        fetch("{% url 'abyss_randomizer:get_characters' %}")
+        await fetch("{% url 'abyss_randomizer:get_characters' %}")
         .then(response => response.json())
         .then(data => toggleContent(data))
         document.querySelector('#select-your-character').checked = true;
@@ -135,80 +138,106 @@
      return retArr;
   }
 
-  function cvtRowToHtml(row, isTh){
-    //row you get from getRow function, type can be 
+  function cvtRowToHtml(row, headerRow=null){
+    //row you get from getRow function. If headerRow is empty, 
     let retStr = '';
-    let element = isTh? ['th', '', text => text.charAt(0).toUpperCase() + text.slice(1)] : ['td', "<input type='checkbox'>", text => text]
-    row.forEach(cell => {
-      retStr += `<${element[0]}> ${cell === null? '': element[1] + element[2](cell)}</${element[0]}>`
-    })
+    let myTableSelect = JSON.parse(localStorage.getItem(MY_TABLE_SELECT));
+    let element;
+    if (headerRow === null){
+      element = ['th', ((text,index) => text.charAt(0).toUpperCase() + text.slice(1))];
+    }
+    else{
+      element = ['td', ((text, index) => `<input name='${headerRow[index]}' value='${text}' type='checkbox' ${(myTableSelect[headerRow[index]].indexOf(text) === -1)?'':'checked'}>` + text)];
+    }
+    for(let i = 0; i < row.length; i++){
+      let cell = row[i];
+      retStr += `<${element[0]}> ${cell === null? '': element[1](cell, i)}</${element[0]}>`
+    }
     return retStr
   }
 
-  function getHeaderRowHtml(headers){
-    let retstr = '';
-    headers.forEach
+  function saveFilter(){
+    let allTableData = JSON.parse(localStorage.getItem(TABLE_DATA));
+    let savedTableData = {};
+    Object.keys(allTableData).forEach(attrType => {
+      let allAttrValue = allTableData[attrType];
+      savedTableData[attrType] = [];
+      document.getElementsByName(attrType).forEach(tableAttrValueTd => {
+        let tableAttrValueInputValue = tableAttrValueTd.value;
+        if (tableAttrValueTd.checked === true && savedTableData[attrType].indexOf(tableAttrValueInputValue) === -1){
+          savedTableData[attrType].push(tableAttrValueInputValue);
+        }
+      })
+    })
+    localStorage.setItem(MY_TABLE_SELECT, JSON.stringify(savedTableData));
+    // toggleDiv(document.querySelector('#popup-filter'), false)
+    getAndStoreContent(document.querySelector('.character-content'), "{% url 'abyss_randomizer:filter_characters' %}", localStorage.getItem(MY_TABLE_SELECT))
+    .then(x => autoToggleContent());
+    return localStorage.getItem(MY_TABLE_SELECT);
   }
 
-  document.addEventListener('DOMContentLoaded', function(){
-    const POPUP_CHARACTER_SELECTION = document.querySelector('#popup-character-selection');
-    const POPUP_FILTER = document.querySelector('#popup-filter');
-    toggleDiv(POPUP_CHARACTER_SELECTION, false);
-    toggleDiv(POPUP_FILTER, false);
-    //getAndStoreContent(document.querySelector('.character-content'), "{% url 'abyss_randomizer:get_characters' %}");
-    getAndStoreContent(document.querySelector('.character-content'), "{% url 'abyss_randomizer:get_all_characters' %}");
-    document.querySelector('#character-selection').onclick = function(){
-      autoToggleContent();
-      toggleDiv(POPUP_CHARACTER_SELECTION, true);
-    }
+  function getCharactersFromHtml(){
+    let retArr = [];
+    document.querySelectorAll('.character-content .character-card').forEach(card => retArr.push(card.id));
+    return retArr;
+  }
 
-    document.querySelector('#character-filter').onclick = function(){
-      toggleDiv(POPUP_FILTER, true);
-      let tableData = JSON.parse(localStorage.getItem(TABLE_DATA));
-      let filterContent = '';
-      let tableDataForRender = [];
-  
-      for (let i = 0; i < Math.max(...getColLenFromTableDataFormat(tableData)); i++){
-          tableDataForRender.push(getRow(tableData, i))
+  let loadContent = fetchAllData();
+  document.addEventListener('DOMContentLoaded', async function(){
+    loadContent
+    .then(async x => {
+      const POPUP_CHARACTER_SELECTION = document.querySelector('#popup-character-selection');
+      const POPUP_FILTER = document.querySelector('#popup-filter');
+      toggleDiv(POPUP_CHARACTER_SELECTION, false);
+      toggleDiv(POPUP_FILTER, false);
+      console.log(localStorage.getItem(MY_TABLE_SELECT));
+      //getAndStoreContent(document.querySelector('.character-content'), "{% url 'abyss_randomizer:get_characters' %}");
+      await getAndStoreContent(document.querySelector('.character-content'), "{% url 'abyss_randomizer:filter_characters' %}", localStorage.getItem(TABLE_DATA));
+      document.querySelector('#character-selection').onclick = function(){
+        autoToggleContent();
+        toggleDiv(POPUP_CHARACTER_SELECTION, true);
       }
-
-      console.log(tableDataForRender);
-      filterContent += `<thead><tr>${cvtRowToHtml(Object.keys(tableData), true)}</tr></thead>`
-      tableDataForRender.forEach(row => {
-        console.log(row);
-        filterContent += `<tr>${cvtRowToHtml(row, false)}</tr>`
-      })
-
-      /*
-      Object.entries(tableData).forEach(table => {
-        let elementList = '';
-        table[1][0].forEach(el => {
-          elementList += `<tr><td><input type='checkbox' name='${table[0]}' value='${el}'></td><td>${el}</td></tr>`
+      document.querySelector('#character-filter').onclick = function(){
+        toggleDiv(POPUP_FILTER, true);
+        let tableData = JSON.parse(localStorage.getItem(TABLE_DATA));
+        let filterContent = '';
+        let tableDataForRender = [];
+    
+        for (let i = 0; i < Math.max(...getColLenFromTableDataFormat(tableData)); i++){
+            tableDataForRender.push(getRow(tableData, i))
+        }
+        let headerRow = Object.keys(tableData);
+        filterContent += `<thead><tr>${cvtRowToHtml(headerRow)}</tr></thead>`
+        tableDataForRender.forEach(row => {
+          filterContent += `<tr>${cvtRowToHtml(row, headerRow)}</tr>`
         })
-        filterContent += `
-            <th colspan='2'>${table[0].charAt(0).toUpperCase()+table[0].slice(1)}</th>
-            ${elementList}
-        `
-      })
-      */
-      document.querySelector('#popup-filter-content').innerHTML = `<table class='filter-attribute secondary-color'>${filterContent}</table>`;
-    }
+  
+        document.querySelector('#popup-filter-content').innerHTML = `<table class='filter-attribute secondary-color'>${filterContent}</table>`;
+      }
+    })
+    .then(x => {
+      document.querySelector('#character-selection').disabled = false;
+    })
   })
+
+  function randomize(listOfCharacters){
+    
+  }
 
 </script>
 {% endblock %}
 {% block body %}
 <h1>Abyss randomizer</h1>
 
-<div id="popup-character-selection" class="primary-background-FF">
+<div id="popup-character-selection" class="popup primary-background-FF">
   <button id="character-filter">Filter</button>
   <button id="esc-popup-character-selection" onclick="toggleDiv(document.querySelector('#popup-character-selection'), false)">X</button>
-  <div id="popup-filter" class="secondary-color primary-background-FF">
+  <div id="popup-filter" class="popup secondary-color primary-background-FF">
     <button id="esc-popup-filter" onclick="toggleDiv(document.querySelector('#popup-filter'), false)">X</button>
     <h2 style="text-align: left;">Filter by:</h2>
     <div id="popup-filter-content"class="primary-background-3F">
     </div>
-    <button onclick="">Save</button>
+    <button onclick="saveFilter()">Save</button>
   </div>
   <div class="character-content primary-background-3F">
   </div>
@@ -231,6 +260,6 @@
 </div>
 
 <nav>
-  <button id="character-selection" >Characters</button>
+  <button id="character-selection" disabled="true">Characters</button>
 </nav>
 {% endblock %}

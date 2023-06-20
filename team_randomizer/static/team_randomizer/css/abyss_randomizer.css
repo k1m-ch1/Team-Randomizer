@@ -50,6 +50,9 @@ th,td {
   filter: invert(100%) hue-rotate(18deg) brightness(5);
 }
 
+.popup {
+  display: none;
+}
 
 #esc-popup{
   
