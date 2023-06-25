@@ -12,11 +12,11 @@ Randomizes teams with filters and different options
 - [ ] refactor the code
 ### Filter
 - [x] create the filtering interface
-- [ ] filter the character selection interface when save
-- [ ] storing it into a localStorage in the client's side
+- [x] filter the character selection interface when save
+- ~~[ ] storing it into a localStorage in the client's side~~
 ### Randomizer UI and logic
-- [ ] create a randomize button and send it to an api
-- [ ] write the randomize api and send it back to the client
+- [x] create a randomize button and send it to an api
+- [x] write the randomize api and send it back to the client
 - [ ] create a randomizer user interface that will display the characters you've just randomized
 #### Modes
 n means use all characters, distribute as evenly as possible
