@@ -10,6 +10,7 @@ from functools import reduce
 from operator import *
 from . import genshin_info
 import json
+from team_randomizer.randomize_logic import split_and_randomize_to_teams
 
 
 GENSHIN_CHARACTER_URL = 'https://genshin-impact.fandom.com/wiki/Character'
@@ -258,14 +259,12 @@ def get_character_schema(request):
 
 @csrf_exempt
 def randomize(request):
-  print('Request type:', type(request))
-  print('Request:', request)
-  print('Request methods:', dir(request))
-  print('Request body:', request.body)
-  print('Request GET:', request.POST)
-  data = json.loads(request.body)
-  return JsonResponse(data)
-  
+  if request.method == 'POST':
+    args = json.loads(request.body)
+    randomized_team = split_and_randomize_to_teams(**args)
+    return JsonResponse(randomized_team, safe=False)
+  return HttpResponse('Method not supported', status=405)
+
 @csrf_exempt
 def filter_characters(request):
   if request.method == 'POST':

@@ -14,14 +14,15 @@
 {% endif %}
 
 <script>
-  function characterCardTemplate(characterName, imgSrc) {
+  function characterCardTemplate(characterName, imgSrc, haveInput=false) {
+    let selectCheckbox = `<input name="${characterName}" id="character-card-checkbox" type="checkbox">`;
     return `
     <div id="${characterName}" class="character-card secondary-color accent-background-BF">
       <img class="character-image" src="${imgSrc}">
       <label>
         ${characterName}
       </label>
-      <input name="${characterName}" id="character-card-checkbox" type="checkbox">
+      ${haveInput? selectCheckbox:''}
     </div>
     `
   }
@@ -51,7 +52,7 @@
     })
     .then(response => response.json())
     .then(data => Object.entries(data).forEach(character=>{
-      elementToStore.innerHTML += characterCardTemplate(character[0], character[1]);
+      elementToStore.innerHTML += characterCardTemplate(character[0], character[1], true);
     }
     ));
   }
@@ -176,11 +177,36 @@
     return localStorage.getItem(MY_TABLE_SELECT);
   }
 
-  function getCharactersFromHtml(){
+  function getCharactersFromHtml(filterChecked=false){
     let retArr = [];
-    document.querySelectorAll('.character-content .character-card').forEach(card => retArr.push(card.id));
+    document.querySelectorAll('#popup-character-selection .character-content .character-card').forEach(card => {
+      if (filterChecked){
+        if(card.querySelector('input').checked){
+          retArr.push(card.id);
+        }
+      }
+      else {
+        retArr.push(card.id);
+      }
+    });
     return retArr;
   }
+
+  
+  function randomize(listOfCharacters){
+    let characterPool = getCharactersFromHtml(true);
+    // team_length=None, number_of_teams=None 
+    fetch("{% url 'abyss_randomizer:randomize' %}", {
+      method: 'post',
+      body: JSON.stringify({
+        list_to_randomize: characterPool,
+        team_length: 4
+      })
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+  }
+
 
   let loadContent = fetchAllData();
   document.addEventListener('DOMContentLoaded', async function(){
@@ -215,15 +241,12 @@
         document.querySelector('#popup-filter-content').innerHTML = `<table class='filter-attribute secondary-color'>${filterContent}</table>`;
       }
     })
-    .then(x => {
+    .then(async x =>  {
+      await autoToggleContent();
+      document.querySelector('#randomize-button').disabled = false;
       document.querySelector('#character-selection').disabled = false;
     })
   })
-
-  function randomize(listOfCharacters){
-    
-  }
-
 </script>
 {% endblock %}
 {% block body %}
@@ -260,6 +283,7 @@
 </div>
 
 <nav>
-  <button id="character-selection" disabled="true">Characters</button>
+  <button id="randomize-button" onclick="randomize()" disabled>Randomize</button>
+  <button id="character-selection" disabled>Characters</button>
 </nav>
 {% endblock %}

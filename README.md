@@ -24,8 +24,10 @@ k is constant, uses user input
 - Mode 1: Create k teams of k length
 - Mode 2: Create n teams of constant k length 
 - Mode 3: Create k teams of n length
-- Mode 4: Select k characters to randomize (need to check for 0 < k < max_characters)
+- Mode 4: Select k characters to randomize (need to check for 0 < k <= max_characters)
 - Mode 5: Select all characters to randomize 
+
+All of this can be done using one function
 ### Randomizer history
 - [ ] display a randomizer history for localStorage for not logged in and store in database if logged in
 - [ ] create a UI that displays your history in your profile if logged in
