@@ -37,6 +37,17 @@ Go to **Team-Randomizer** directory and make sure **manage.py** is there
  - The uid is the user id of your account. This should be displayed at the bottom of your screen or at your profile when you are logged into your genshin account.
  #### how to get access to your ltuid and ltoken
  - The **ltuid** and **ltoken** will be availabe in your web browser once you login to [hoyolab](https://www.hoyolab.com/)
+ <style>
+ 	figcap {
+ 		font-size: 1.2rem;
+ 		font-weight: bold;
+ 		text-align: center;
+ 	}
+
+ 	figure {
+ 		text-align: center;
+ 	}
+ </style>
  <figure>
  	<img src="./instruction_images/001_inspect_element.png">
  	<figcap>Right click and click on inspect element</figcap>
