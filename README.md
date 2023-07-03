@@ -37,21 +37,21 @@ Go to **Team-Randomizer** directory and make sure **manage.py** is there
  - The uid is the user id of your account. This should be displayed at the bottom of your screen or at your profile when you are logged into your genshin account.
  #### how to get access to your ltuid and ltoken
  - The **ltuid** and **ltoken** will be availabe in your web browser once you login to [hoyolab](https://www.hoyolab.com/)
- <figcap style="text-align:center;">
+ <figcap style="text-align:center;font-weight:bold;">
  	<img src="./instruction_images/001_inspect_element.png">
- 	<figcap style="text-align:center;">Right click and click on inspect element</figcap>
+ 	<figcap style="text-align:center;font-weight:bold;">Right click and click on inspect element</figcap>
  </figure>
-<figcap style="text-align:center;">
+<figcap style="text-align:center;font-weight:bold;">
  	<img src="./instruction_images/002_inspect_element_view_click_more.png">
- 	<figcap style="text-align:center;">Click on more</figcap>
+ 	<figcap style="text-align:center;font-weight:bold;">Click on more</figcap>
  </figure>
-<figcap style="text-align:center;">
+<figcap style="text-align:center;font-weight:bold;">
  	<img src="./instruction_images/003_inspect_element_click_application.png">
- 	<figcap style="text-align:center;">Click on applications</figcap>
+ 	<figcap style="text-align:center;font-weight:bold;">Click on applications</figcap>
  </figure>
- <figcap style="text-align:center;">
+ <figcap style="text-align:center;font-weight:bold;">
  	<img src="./instruction_images/004_application_view.png">
- 	<figcap style="text-align:center;">Copy the **ltuid** and **ltoken** and then paste it into the fields in on your profile and click <b>Save</b></figcap>
+ 	<figcap style="text-align:center;font-weight:bold;">Copy the **ltuid** and **ltoken** and then paste it into the fields in on your profile and click <b>Save</b></figcap>
  </figure>
 
 ### Saving user details
