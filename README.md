@@ -49,10 +49,7 @@ Go to **Team-Randomizer** directory and make sure **manage.py** is there
  	<img src="./instruction_images/003_inspect_element_click_application.png">
  	<figcap style="text-align:center;font-weight:bold;">Click on applications</figcap>
  </figure>
- <figcap style="text-align:center;font-weight:bold;">
- 	<img src="./instruction_images/004_application_view.png">
- 	<figcap style="text-align:center;font-weight:bold;">Copy the **ltuid** and **ltoken** and then paste it into the fields in on your profile and click <b>Save</b></figcap>
- </figure>
+Copy the **ltuid** and **ltoken** and then paste it into the fields in on your profile and click <b>Save</b>
 
 ### Saving user details
 - There are two type of storage. 
